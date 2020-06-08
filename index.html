@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
-    <title>Story by HTML5 UP</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    />
+    <title>Rajit Banerjee</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -17,486 +17,414 @@
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
   </head>
-  <body class="is-preload">
+  <body class="is-preload" onload="typeWriter()">
     <!-- Wrapper -->
     <div id="wrapper" class="divided">
-      <!-- One -->
+      <!-- Introduction -->
       <section
-        class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+        class="banner style3 invert orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
       >
         <div class="content">
-          <h1>Story</h1>
+          <div id="first-line">
+            <h2 id="typing"></h2>
+            <input
+              type="checkbox"
+              id="toggle"
+              class="offscreen"
+              autocomplete="off"
+              onclick="resetCursor()"
+            />
+            <label for="toggle" class="switch"></label>
+          </div>
           <p class="major">
-            A (modular, highly tweakable) responsive one-page template designed
-            by <a href="https://html5up.net">HTML5 UP</a> and released for free
-            under the
-            <a href="https://html5up.net/license">Creative Commons</a>.
+            I study Computer Science & Data Science at
+            <a href="https://www.ucd.ie/" target="_blank">UCD</a>.<br />
+            My determination to maintain the highest standards in my work and
+            academics is what drives me to improve constantly.<br />
+            <br />I also enjoy helping people around me to the best of my
+            ability. In my own time, I love taking photos, going for walks,
+            listening to music and catching up on my favourite TV shows.
           </p>
+          <div class="inner">
+            <ul class="icons">
+              <li>
+                <a
+                  href="mailto:rajit.banerjee@ucdconnect.ie"
+                  class="icon style1 fa-envelope"
+                  ><span class="label">Email</span></a
+                >
+                <a href="mailto:rajit.banerjee@ucdconnect.ie">Email</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rajitbanerjee"
+                  target="_blank"
+                  class="icon brands style1 fa-linkedin-in"
+                  ><span class="label">LinkedIn</span></a
+                >
+                <a
+                  href="https://www.linkedin.com/in/rajitbanerjee"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/rajitbanerjee"
+                  target="_blank"
+                  class="icon brands style1 fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+                <a href="https://github.com/rajitbanerjee" target="_blank"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="image">
+          <a href="https://rajitbanerjee.github.io">
+            <img
+              src="https://avatars3.githubusercontent.com/u/44174210?s=460&u=46df8da5f592b1ff07bf882ae173e88e3c4078b8&v=4"
+              alt="Rajit Banerjee's avatar"
+          /></a>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section
+        class="spotlight invert style5 orient-center content-align-center image-position-left onscroll-image-fade-in onscroll-content-fade-right"
+        id="first"
+      >
+        <div class="content">
+          <h2>Skills</h2>
+          <p>
+            Currently, I'm working on personal projects and learning how to
+            <em>teach myself</em> new technologies. For the past few years, I've
+            been primarily coding in Java. I've also been working with
+            Python/Jupyter Notebook for my summer internships and solving
+            problems on
+            <a
+              href="https://open.kattis.com/universities/ucd.ie"
+              target="_blank"
+              >Kattis</a
+            >
+            and <a href="https://leetcode.com/" target="_blank">LeetCode</a>.
+          </p>
+          <table class="fixed">
+            <tr></tr>
+            <tr>
+              <td>Java</td>
+              <td>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td>Python</td>
+              <td>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td>C</td>
+              <td>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td>SQL (MySQL)</td>
+              <td>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td>Scheme (Racket)</td>
+              <td>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td>HTML/CSS</td>
+              <td>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td>R</td>
+              <td>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </td>
+            </tr>
+            <tr></tr>
+          </table>
+          <table class="fixed">
+            <thead>
+              Tools & Technologies
+            </thead>
+            <tr></tr>
+            <tr>
+              <td>
+                Git, Scrum (agile framework)
+              </td>
+              <td>JavaFX, Pygame, Jekyll</td>
+            </tr>
+          </table>
           <ul class="actions stacked">
             <li>
-              <a href="#first" class="button big wide smooth-scroll-middle"
-                >Get Started</a
-              >
+              <!-- <a
+                TODO
+                href="assets/resume/rajit_banerjee.pdf"
+                class="button"
+                target="_blank"
+                >View Resume</a
+              > -->
             </li>
           </ul>
         </div>
         <div class="image">
-          <img src="images/banner.jpg" alt="" />
+          <img
+            src="assets/images/spotlight.jpg"
+            alt="Mountains in Leh, India"
+          />
         </div>
       </section>
 
-      <!-- Two -->
-      <section
-        class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
-        id="first"
-      >
-        <div class="content">
-          <h2>Magna etiam feugiat</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
-            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
-            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
-            dolor sit amet.
-          </p>
-          <ul class="actions stacked">
-            <li><a href="#" class="button">Learn More</a></li>
-          </ul>
-        </div>
-        <div class="image">
-          <img src="images/spotlight01.jpg" alt="" />
-        </div>
-      </section>
-
-      <!-- Three -->
-      <section
-        class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
-      >
-        <div class="content">
-          <h2>Tempus adipiscing</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
-            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
-            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
-            dolor sit amet.
-          </p>
-          <ul class="actions stacked">
-            <li><a href="#" class="button">Learn More</a></li>
-          </ul>
-        </div>
-        <div class="image">
-          <img src="images/spotlight02.jpg" alt="" />
-        </div>
-      </section>
-
-      <!-- Four -->
-      <section
-        class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
-      >
-        <div class="content">
-          <h2>Pharetra etiam nulla</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
-            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
-            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
-            dolor sit amet.
-          </p>
-          <ul class="actions stacked">
-            <li><a href="#" class="button">Learn More</a></li>
-          </ul>
-        </div>
-        <div class="image">
-          <img src="images/spotlight03.jpg" alt="" />
-        </div>
-      </section>
-
-      <!-- Five -->
-      <section class="wrapper style1 align-center">
+      <!-- Projects -->
+      <section class="wrapper style1 invert align-center">
         <div class="inner">
-          <h2>Massa sed condimentum</h2>
+          <h2>Projects</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
-            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
-            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.
+            Here are a few projects that I'm currently working on, or have
+            completed in the past.
           </p>
-        </div>
-
-        <!-- Gallery -->
-        <div class="gallery style2 medium lightbox onscroll-fade-in">
-          <article>
-            <a href="images/gallery/fulls/01.jpg" class="image">
-              <img src="images/gallery/thumbs/01.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Ipsum Dolor</h3>
+          <div class="items style3 medium onscroll-fade-in">
+            <!-- <section>
+              TODO
+              <h3>
+                <a href="" target="_blank">B106 Technologies</a>
+              </h3>
               <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
+                Co-founder and CTO of a company that is completely driven by
+                students working on projects in the areas of software
+                development, web design, data analytics, and more.
               </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <a href="images/gallery/fulls/02.jpg" class="image">
-              <img src="images/gallery/thumbs/02.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Feugiat Lorem</h3>
-              <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
-              </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <a href="images/gallery/fulls/03.jpg" class="image">
-              <img src="images/gallery/thumbs/03.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Magna Amet</h3>
-              <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
-              </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <a href="images/gallery/fulls/04.jpg" class="image">
-              <img src="images/gallery/thumbs/04.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Sed Tempus</h3>
-              <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
-              </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <a href="images/gallery/fulls/05.jpg" class="image">
-              <img src="images/gallery/thumbs/05.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Ultrices Magna</h3>
-              <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
-              </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <a href="images/gallery/fulls/06.jpg" class="image">
-              <img src="images/gallery/thumbs/06.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Sed Tempus</h3>
-              <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
-              </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <a href="images/gallery/fulls/07.jpg" class="image">
-              <img src="images/gallery/thumbs/07.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Ipsum Lorem</h3>
-              <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
-              </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <a href="images/gallery/fulls/08.jpg" class="image">
-              <img src="images/gallery/thumbs/08.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Magna Risus</h3>
-              <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
-              </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <a href="images/gallery/fulls/09.jpg" class="image">
-              <img src="images/gallery/thumbs/09.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Tempus Dolor</h3>
-              <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
-              </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <a href="images/gallery/fulls/10.jpg" class="image">
-              <img src="images/gallery/thumbs/10.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Sed Etiam</h3>
-              <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
-              </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <a href="images/gallery/fulls/11.jpg" class="image">
-              <img src="images/gallery/thumbs/11.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Magna Lorem</h3>
-              <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
-              </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <a href="images/gallery/fulls/12.jpg" class="image">
-              <img src="images/gallery/thumbs/12.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h3>Ipsum Dolor</h3>
-              <p>
-                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
-                ultrices.
-              </p>
-              <ul class="actions fixed">
-                <li><span class="button small">Details</span></li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Six -->
-      <section class="wrapper style1 align-center">
-        <div class="inner">
-          <h2>Ipsum sed consequat</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
-            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
-            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.
-          </p>
-          <div class="items style1 medium onscroll-fade-in">
+            </section> -->
             <section>
-              <span class="icon style2 major fa-gem"></span>
-              <h3>Lorem</h3>
+              <h3>
+                <a
+                  href="https://github.com/rajitbanerjee/Scrabble"
+                  target="_blank"
+                  >Scrabble</a
+                >
+              </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
+                Implemented the game logic and designed the GUI and bot for the
+                popular word game, in a team of 3. Currently trying to improve
+                the bot performance.<br />
+                Tools: Java, JavaFX
               </p>
             </section>
             <section>
-              <span class="icon solid style2 major fa-save"></span>
-              <h3>Ipsum</h3>
+              <h3>
+                <a
+                  href="https://github.com/rajitbanerjee/2048-pygame"
+                  target="_blank"
+                  >2048</a
+                >
+              </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
+                Designed the single-player puzzle game, 2048, using Python and
+                Pygame.
               </p>
             </section>
             <section>
-              <span class="icon solid style2 major fa-chart-bar"></span>
-              <h3>Dolor</h3>
+              <h3>
+                <a
+                  href="https://github.com/rajitbanerjee/amazon-price-tracker"
+                  target="_blank"
+                  >Amazon Price Tracker</a
+                >
+              </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
+                A web scraping project to track the price of an item on
+                <a href="https://www.amazon.co.uk/" target="_blank">Amazon UK</a
+                >, using Python and Beautiful Soup.
               </p>
             </section>
             <section>
-              <span class="icon solid style2 major fa-wifi"></span>
-              <h3>Amet</h3>
+              <h3>
+                <a
+                  href="https://github.com/rajitbanerjee/python-scripts"
+                  target="_blank"
+                  >Python Scripts</a
+                >
+              </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
+                A collection of scripts to automate a variety of tasks. Work in
+                progress.
               </p>
             </section>
             <section>
-              <span class="icon solid style2 major fa-cog"></span>
-              <h3>Magna</h3>
+              <h3>
+                <a
+                  href="https://github.com/AmplifiedHuman/Igel-Argern-Game"
+                  target="_blank"
+                  >Igel Ärgern</a
+                >
+              </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
+                C implementation of the German board game, Igel Ärgern, built in
+                a team of 2.
               </p>
             </section>
             <section>
-              <span class="icon style2 major fa-paper-plane"></span>
-              <h3>Tempus</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
-              </p>
-            </section>
-            <section>
-              <span class="icon solid style2 major fa-desktop"></span>
-              <h3>Aliquam</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
-              </p>
-            </section>
-            <section>
-              <span class="icon solid style2 major fa-sync-alt"></span>
-              <h3>Elit</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
-              </p>
-            </section>
-            <section>
-              <span class="icon solid style2 major fa-hashtag"></span>
-              <h3>Morbi</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
-              </p>
-            </section>
-            <section>
-              <span class="icon solid style2 major fa-bolt"></span>
-              <h3>Turpis</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
-              </p>
-            </section>
-            <section>
-              <span class="icon solid style2 major fa-envelope"></span>
-              <h3>Ultrices</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
-              </p>
-            </section>
-            <section>
-              <span class="icon solid style2 major fa-leaf"></span>
-              <h3>Risus</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                dui turpis, cursus eget orci amet aliquam congue semper. Etiam
-                eget ultrices risus nec tempor elit.
-              </p>
+              <ul class="actions stacked">
+                <li>
+                  <a
+                    href="https://github.com/rajitbanerjee?tab=repositories"
+                    target="_blank"
+                    class="button big wide smooth-scroll-middle"
+                    >View More on GitHub</a
+                  >
+                </li>
+              </ul>
             </section>
           </div>
         </div>
       </section>
 
-      <!-- Seven -->
-      <section class="wrapper style1 align-center">
-        <div class="inner medium">
-          <h2>Get in touch</h2>
-          <form method="post" action="#">
-            <div class="fields">
-              <div class="field half">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" value="" />
-              </div>
-              <div class="field half">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" value="" />
-              </div>
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6"></textarea>
-              </div>
+      <!-- Gallery -->
+      <section class="wrapper style1 invert align-center">
+        <div class="inner">
+          <h2>Photography</h2>
+          <p>
+            I love landscape photography. Recently, I've also been covering
+            events and taking portraits of my friends. <br />
+            Check out more on
+            <a href="https://instagram.com/rajit.banerjee" target="_blank"
+              >@rajit.banerjee</a
+            >,
+            <a href="https://instagram.com/rbxportraits" target="_blank"
+              >@rbxportraits</a
+            >.
+          </p>
+        </div>
+        <div class="gallery style2 big lightbox onscroll-fade-in">
+          <article>
+            <a href="assets/images/gallery/01.jpg" class="image">
+              <img src="assets/images/gallery/01.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <h3>Khardung La, India</h3>
             </div>
-            <ul class="actions special">
-              <li>
-                <input
-                  type="submit"
-                  name="submit"
-                  id="submit"
-                  value="Send Message"
-                />
-              </li>
-            </ul>
-          </form>
+          </article>
+          <article>
+            <a href="assets/images/gallery/02.jpg" class="image">
+              <img src="assets/images/gallery/02.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <h3>Leh, India</h3>
+            </div>
+          </article>
+          <article>
+            <a href="assets/images/gallery/03.jpg" class="image">
+              <img src="assets/images/gallery/03.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <h3>Pangong Tso, India</h3>
+            </div>
+          </article>
+          <article>
+            <a href="assets/images/gallery/04.jpg" class="image">
+              <img src="assets/images/gallery/04.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <h3>Nubra Valley, India</h3>
+            </div>
+          </article>
+          <article>
+            <a href="assets/images/gallery/05.jpg" class="image">
+              <img src="assets/images/gallery/05.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <h3>Co. Wicklow, Ireland</h3>
+            </div>
+          </article>
+          <article>
+            <a href="assets/images/gallery/06.jpg" class="image">
+              <img src="assets/images/gallery/06.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <h3>Dublin, Ireland</h3>
+            </div>
+          </article>
         </div>
       </section>
 
       <!-- Footer -->
-      <footer class="wrapper style1 align-center">
+      <footer class="wrapper style1 invert align-center">
         <div class="inner">
+          <h2>Contact</h2>
+          <p>
+            Please get in touch with me via email or LinkedIn!
+          </p>
           <ul class="icons">
             <li>
-              <a href="#" class="icon brands style2 fa-twitter"
-                ><span class="label">Twitter</span></a
+              <a
+                href="mailto:rajit.banerjee@ucdconnect.ie"
+                class="icon style2 fa-envelope"
+                ><span class="label">Email</span></a
               >
             </li>
             <li>
-              <a href="#" class="icon brands style2 fa-facebook-f"
-                ><span class="label">Facebook</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon brands style2 fa-instagram"
-                ><span class="label">Instagram</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon brands style2 fa-linkedin-in"
+              <a
+                href="https://www.linkedin.com/in/rajitbanerjee"
+                target="_blank"
+                class="icon brands style2 fa-linkedin-in"
                 ><span class="label">LinkedIn</span></a
               >
             </li>
             <li>
-              <a href="#" class="icon style2 fa-envelope"
-                ><span class="label">Email</span></a
+              <a
+                href="https://github.com/rajitbanerjee"
+                target="_blank"
+                class="icon brands style2 fa-github"
+                ><span class="label">GitHub</span></a
               >
             </li>
           </ul>
           <p>
-            &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
+            &copy; 2020 Rajit Banerjee. Images: self-owned. Design:
+            <a href="https://html5up.net" target="_blank">HTML5 UP</a>.
           </p>
         </div>
       </footer>
