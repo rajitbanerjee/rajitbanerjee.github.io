@@ -19,11 +19,17 @@
     xxsmall: [null, '360px'],
   })
 
-  // Play initial animations on page load.
-  $window.on('load', function () {
-    window.setTimeout(function () {
-      $body.removeClass('is-preload')
-    }, 100)
+  $window.on({
+    // Play initial animations on page load.
+    load: function () {
+      window.setTimeout(function () {
+        $body.removeClass('is-preload')
+      }, 100)
+    },
+    // Scroll back to top on reload
+    beforeunload: function () {
+      $window.scrollTop(0)
+    },
   })
 
   // Browser fixes.
