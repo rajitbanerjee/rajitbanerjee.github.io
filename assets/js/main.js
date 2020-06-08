@@ -296,3 +296,41 @@
       }, 275)
     })
 })(jQuery)
+
+/* TYPEWRITER EFFECT */
+
+let i = 0
+let txt = "Hi! I'm Raj."
+txt = '     ' + txt // wait for document to load (need help!)
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById('typing').innerHTML += txt.charAt(i)
+    i++
+    setTimeout(typeWriter, 75)
+  }
+}
+
+function resetCursor() {
+  let el = document.getElementById('typing')
+  el.style.animation = 'none'
+  el.offsetHeight /* trigger reflow */
+  el.style.animation = null
+}
+
+/* TOGGLE THEME */
+
+let checkbox = document.querySelector('input[id=toggle]')
+
+checkbox.addEventListener('change', function () {
+  let sections = document.getElementsByTagName('section')
+  for (let i = 0; i < sections.length; i++) {
+    sections[i].classList.toggle('invert')
+  }
+  let footer = document.getElementsByTagName('footer')
+  footer[0].classList.toggle('invert')
+
+  document.getElementById('typing').innerHTML = ''
+  i = 0
+  typeWriter()
+})
