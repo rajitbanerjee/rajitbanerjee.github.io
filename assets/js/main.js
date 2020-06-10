@@ -306,7 +306,7 @@
 /* TYPEWRITER EFFECT */
 
 let i = 0
-let txt = "Hi! I'm Raj."
+let txt = "Rajit Banerjee"
 txt = '     ' + txt // wait for document to load (need help!)
 
 function typeWriter() {
