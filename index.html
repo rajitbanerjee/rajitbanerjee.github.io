@@ -33,14 +33,13 @@
         <div class="content">
           <div id="first-line">
             <h2 id="typing"></h2>
-            <input
-              type="checkbox"
-              id="toggle"
-              class="offscreen"
-              autocomplete="off"
-              onclick="resetCursor()"
-            />
-            <label for="toggle" class="switch"></label>
+            <div
+              id="switch"
+              title="Light"
+              onclick="resetCursor(), switchTheme()"
+            >
+              <i id="celestial" class="fas fa-moon"></i>
+            </div>
           </div>
           <p class="major">
             Hi! I'm a Computer Science & Data Science student at

@@ -306,7 +306,7 @@
 /* TYPEWRITER EFFECT */
 
 let i = 0
-let txt = "Rajit Banerjee"
+let txt = 'Rajit Banerjee'
 txt = '     ' + txt // wait for document to load (need help!)
 
 function typeWriter() {
@@ -324,11 +324,21 @@ function resetCursor() {
   el.style.animation = null
 }
 
-/* TOGGLE THEME */
+/* SWITCH THEME */
 
-let checkbox = document.querySelector('input[id=toggle]')
+function switchTheme() {
+  // Change icon
+  let celestial = document.getElementById('celestial')
+  icon = celestial.classList
+  if (icon.contains('fa-sun')) {
+    icon.replace('fa-sun', 'fa-moon')
+  } else {
+    icon.replace('fa-moon', 'fa-sun')
+  }
+  let button = document.getElementById('switch')
+  button.title = button.title == 'Light' ? 'Dark' : 'Light'
 
-checkbox.addEventListener('change', function () {
+  // Toggle theme
   let sections = document.getElementsByTagName('section')
   for (let i = 0; i < sections.length; i++) {
     sections[i].classList.toggle('invert')
@@ -339,4 +349,4 @@ checkbox.addEventListener('change', function () {
   document.getElementById('typing').innerHTML = ''
   i = 0
   typeWriter()
-})
+}
