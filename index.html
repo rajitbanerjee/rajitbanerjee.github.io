@@ -46,15 +46,12 @@
         class="banner style3 invert orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
       >
         <div class="content">
-          <div id="first-line">
+          <div
+            id="first-line"
+            title="Switch to light theme."
+            onclick="resetCursor(), switchTheme()"
+          >
             <h2 id="typing"></h2>
-            <div
-              id="switch"
-              title="Light"
-              onclick="resetCursor(), switchTheme()"
-            >
-              <i id="celestial" class="fas fa-moon"></i>
-            </div>
           </div>
           <p class="major">
             Hi! I'm a Computer Science & Data Science student at
@@ -113,12 +110,16 @@
             </ul>
           </div>
         </div>
-        <div class="image">
-          <a href="https://rajitbanerjee.github.io">
-            <img
-              src="https://avatars3.githubusercontent.com/u/44174210?s=460&u=46df8da5f592b1ff07bf882ae173e88e3c4078b8&v=4"
-              alt="Rajit Banerjee's avatar"
-          /></a>
+        <div
+          class="image circle circle-border"
+          id="profile-image"
+          title="Switch to light theme."
+          onclick="resetCursor(), switchTheme()"
+        >
+          <img
+            src="https://avatars3.githubusercontent.com/u/44174210?s=460&u=46df8da5f592b1ff07bf882ae173e88e3c4078b8&v=4"
+            alt="Rajit Banerjee's avatar"
+          />
         </div>
       </section>
 
@@ -217,8 +218,8 @@
               </h3>
               <p>
                 Co-founder/CTO of a company that brings students together to
-                work on open source projects in the fields of software development,
-                web design, data analytics, and more.
+                work on open source projects in the fields of software
+                development, web design, data analytics, and more.
               </p>
             </section>
             <section>
@@ -274,19 +275,6 @@
                 A web scraping project to track the price of an item on
                 <a href="https://www.amazon.co.uk/" target="_blank">Amazon UK</a
                 >, using Python and Beautiful Soup.
-              </p>
-            </section>
-            <section>
-              <h3>
-                <a
-                  href="https://github.com/AmplifiedHuman/Igel-Argern-Game"
-                  target="_blank"
-                  >Igel Ärgern</a
-                >
-              </h3>
-              <p>
-                C implementation of the German board game, Igel Ärgern, built in
-                a team of 2.
               </p>
             </section>
             <section>
