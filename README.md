@@ -1,6 +1,6 @@
-# rajitbanerjee.github.io
+# [rajitbanerjee.com](https://rajitbanerjee.com)
 
-My portfolio website, (https://rajitbanerjee.github.io).  
+My portfolio website, (https://rajitbanerjee.com).  
 Built with some help from [@ajlkn](https://github.com/ajlkn), and a few additional features that I found cool.
 
 ### Credits:
