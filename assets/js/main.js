@@ -327,16 +327,6 @@ function resetCursor() {
 /* SWITCH THEME */
 
 function switchTheme() {
-  // Display hints when hovering over profile picture or name
-  let switch_ids = ["profile-image", "first-line"];
-  for (let i = 0; i < switch_ids.length; i++) {
-    let button = document.getElementById(switch_ids[i]);
-    button.title =
-      button.title == "Switch to light theme."
-        ? "Switch to dark theme."
-        : "Switch to light theme.";
-  }
-
   // Toggle theme
   let sections = document.getElementsByTagName("section");
   for (let i = 0; i < sections.length; i++) {
