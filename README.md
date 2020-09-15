@@ -1,7 +1,6 @@
 # [rajitbanerjee.com](https://rajitbanerjee.com)
 
-My portfolio website, (https://rajitbanerjee.com).  
-Built with some help from [@ajlkn](https://github.com/ajlkn), and a few additional features that I found cool.
+My portfolio website, with custom features and effects added to a beautiful initial design template by [@ajlkn](https://github.com/ajlkn).
 
 ### Credits:
 
