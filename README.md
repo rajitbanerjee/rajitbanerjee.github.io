@@ -2,6 +2,8 @@
 
 My portfolio website, with custom features and effects added to a beautiful initial design template by [@ajlkn](https://github.com/ajlkn).
 
+<img src="screenshot.png">
+
 ### Credits:
 
 - Template: [HTML5 UP](https://html5up.net), [@ajlkn](https://github.com/ajlkn)
