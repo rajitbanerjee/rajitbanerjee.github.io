@@ -258,7 +258,7 @@ a {
   -webkit-transition: color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
@@ -293,6 +293,10 @@ h6 {
   line-height: 1.375;
   letter-spacing: -0.05em;
   margin: 0 0 1rem 0;
+}
+
+h4 {
+  font-weight: bold;
 }
 
 h1 a,
