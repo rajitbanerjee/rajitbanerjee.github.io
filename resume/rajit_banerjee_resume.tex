@@ -1,9 +1,9 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+%---------------------------------------------------
+% LaTeX Resume
+% Template Author:  Jake Gutierrez
+% Adapted from:     https://github.com/sb2nov/resume
+% License:          MIT
+%---------------------------------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -42,39 +42,39 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+    \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
+
+%---------CUSTOM COMMANDS--------
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+\item\small{
+        {#1 \vspace{-2pt}}
+    }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+    \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
+\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+        \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
+\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+        \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -87,118 +87,156 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+%-----------RESUME CONTENT-----------
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
 
+%--------------HEADING---------------
 \begin{center}
-	\textbf{\Huge Jake Ryan} \\ \vspace{1pt}
-	\small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$
-	\href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
-	\href{https://github.com/...}{\underline{github.com/jake}}
+	\textbf{\Huge Rajit Banerjee} \\ \vspace{5pt}
+	\href{https://rajitbanerjee.com}{\small rajitbanerjee\textbf{.com}} $|$
+	\href{https://linkedin.com/in/rajitbanerjee/}{\small \textbf{linkedin}: rajitbanerjee} $|$
+	\href{https://github.com/rajitbanerjee}{\small \textbf{github}: rajitbanerjee} $|$
+	\href{mailto:rajit.banerjee@ucdconnect.ie}{\small rajit.banerjee\textbf{@}ucdconnect\textbf{.ie}} $|$
+	{\small \textbf{Dublin}, Ireland}
 \end{center}
 
+% Alternate Heading:
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{https://rajitbanerjee.com/}{\Large Rajit Banerjee}} & Email : \href{mailto:rajit.banerjee@ucdconnect.ie}{rajit.banerjee@ucdconnect.ie}\\
+%   \href{https://rajitbanerjee.com}{https://rajitbanerjee.com} & Mobile : +353 XXXXXXXXX \\
+% \end{tabular*}
 
-%-----------EDUCATION-----------
+
+%--------------EDUCATION--------------
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Southwestern University}{Georgetown, TX}
-{Bachelor of Arts in Computer Science, Minor in Business}{Aug. 2018 -- May 2021}
-\resumeSubheading
-{Blinn College}{Bryan, TX}
-{Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+{University College Dublin}{Dublin, Ireland}
+{BSc (Hons.) Computer Science with Data Science}{Sep. 2018 -- Jun. 2022 (Expected)}
+
+\resumeItemListStart
+\resumeItem{\textbf{GPA}: 4.11/4.20 (First Class Honours)}
+\resumeItem{\textbf{Coursework}:
+	Data Structures, Algorithms,
+	Introduction to AI,
+	Programming for Big Data,
+	Databases \& Information Systems,
+	Business Analytics,
+	Software Engineering I \& II,
+	Linear Algebra II,
+	Social Entrepreneurship}
+
+\resumeItem{\textbf{Honours and Awards}:
+	\href{https://www.ucd.ie/adastraacademy/academic/}{UCD Ad Astra Academic Scholarship},
+	\href{https://www.ucd.ie/global/scholarships/}{UCD Global Undergraduate Scholarship},
+	BSc Computer Science Scholarship
+	(\href{https://sisweb.ucd.ie/usis/W_HU_REPORTING.P_DISPLAY_QUERY?p_query=SC101-1A&p_parameters=A8A08F4E214445171B5771A1009E1D5B2E8D2BA93239FA8867648F2551D1F6E74111E7B3FBB422649785AC454612F967929BC94109BC9FA35BEAD1F53D23BA161359586343D3237CFDBE22184AE066F37B92C3B3C7382336AC2A2EAE5A092F63FC7A402CF2646B9597CDAAB378E40E1B}{Stage 2},
+	\href{https://sisweb.ucd.ie/usis/W_HU_REPORTING.P_DISPLAY_QUERY?p_query=SC101-1A&p_parameters=A8A08F4E214445171B5771A1009E1D5B2E8D2BA93239FA8867648F2551D1F6E74111E7B3FBB422649785AC454612F96787A57507118273967D6FD3CA5758624C79D7843C965FDFB69E23ABD0A5BF3B8352A54C50CBC563B72C4800831552834F550B235F0EFC644A6070F3328CE618D803B3E3CD94D6ADF3C463A5184F86FFAB}{Stage 3}),
+	Insight Centre Research Scholarship,
+	UCD Embark Award}
+\resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 
-%----------SKILLS-----------
+%---------------SKILLS------------------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
-	      \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-	      \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-	      \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-	      \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+	      \textbf{Languages}{: Python, Java, Go, SQL (MySQL, BigQuery), HTML/CSS, C, Scheme (Racket), R} \\
+	      \textbf{Tools}{: Git, Docker, Agile (Scrum, Kanban), Linux/Shell, MS Excel, Tableau, Vim, VS Code, IntelliJ IDEA} \\
+	      }}
+
+	      \small{\item{
+	      \textbf{Certificates}{:
+		      \underline{Virtual Internships}
+		      (\href{https://insidesherpa.s3.amazonaws.com/completion-certificates/KPMG/m7W4GMqeT3bh9Nb2c_KPMG_oXfzxXCwznR6kbwCr_completion_certificate.pdf}{KPMG (Data Analytics)},
+		      \href{https://insidesherpa.s3.amazonaws.com/completion-certificates/JP\%20Morgan/R5iK7HMxJGBgaSbvk_JPMorgan\%20Chase_oXfzxXCwznR6kbwCr_completion_certificate.pdf}{JPMorgan Chase \& Co. (Software Engineering)}),
+		      \newline
+		      \underline{Kaggle}
+		      (\href{https://www.kaggle.com/learn/certification/rajitbanerjee/advanced-sql}{Advanced SQL},
+		      \href{https://www.kaggle.com/learn/certification/rajitbanerjee/intro-to-machine-learning}{Intro to Machine Learning},
+		      \href{https://www.kaggle.com/learn/certification/rajitbanerjee/data-visualization}{Data Visualization}),
+		      \underline{HackerRank}
+		      (\href{https://www.hackerrank.com/certificates/0a172d60bd75}{Rest API},
+		      \href{https://www.hackerrank.com/certificates/451957828c61}{Python},
+		      \href{https://www.hackerrank.com/certificates/753d7e1f1e95}{Java})
+	      } \\
 	      }}
 \end{itemize}
 
 
-%----------WORK EXPERIENCE-----------
-\section{Experience}
+%------------WORK EXPERIENCE-------------
+\section{Work Experience}
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Undergraduate Research Assistant}{June 2020 -- Present}
-{Texas A\&M University}{College Station, TX}
+{\href{https://www.insight-centre.org/}{Insight SFI Research Centre for Data Analytics}}{Dublin, Ireland}
+{Research Intern $|$ Tools: Python, OpenCV, Docker, Bash}{Jun. -- Aug. 2020}
 \resumeItemListStart
-\resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-\resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
-\resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+\resumeItem{Project (human body pose estimation): Performed experiments with multiple pose estimation models to
+	estimate the body keypoints of novice athletes (runners) using pre-recorded input videos.}
+\resumeItem{Designed Bash scripts and Docker containers to automate video processing on a remote server.}
+\resumeItem{Analysed time-series data and computed a variety of body pose angles from video frames to assist runners with maintaining optimal form and posture.}
 \resumeItemListEnd
 
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
 \resumeSubheading
-{Information Technology Support Specialist}{Sep. 2018 -- Present}
-{Southwestern University}{Georgetown, TX}
+{\href{https://www.prmfincon.com/}{PRM Fincon Services Pvt. Ltd.}}{Kolkata, India}
+{Python Development Intern $|$ Tools: Python, OpenCV, Tesseract OCR, Camelot}{Jun. -- Aug. 2019}
 \resumeItemListStart
-\resumeItem{Communicate with managers to set up campus computers used on campus}
-\resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-\resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
-\resumeItemListEnd
-
-\resumeSubheading
-{Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-{Southwestern University}{Georgetown, TX}
-\resumeItemListStart
-\resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-\resumeItem{Developed a game in Java to test the generated dungeons}
-\resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-\resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-\resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-\resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+\resumeItem{Project (data extraction from financial reports): Refactored and optimised code to extract tabular data (balance sheets, income statements) by applying various image processing techniques to PDF pages.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------
+%-----------------PROJECTS-----------------
 \section{Projects}
 \resumeSubHeadingListStart
+
 \resumeProjectHeading
-{\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+{\href{https://github.com/rajitbanerjee/scripts}{\textbf{Scripts} $|$
+		\emph{Python, Bash}}}{Jul. 2020 -- Present}
 \resumeItemListStart
-\resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-\resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
-\resumeItem{Visualized GitHub data to show collaboration}
-\resumeItem{Used Celery and Redis for asynchronous tasks}
+\resumeItem{A collection of Bash and Python scripts to simplify a variety of day-to-day tasks, including merging, encrypting, modifying PDFs; quick installations for utilities; shortcuts for common terminal commands, and so on.}
 \resumeItemListEnd
+
 \resumeProjectHeading
-{\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+{\href{https://github.com/rajitbanerjee/Scrabble}{\textbf{Scrabble} $|$
+		\emph{Java, JavaFX, JUnit, Scrum}}}{Jan. -- May 2020}
 \resumeItemListStart
-\resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
-\resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
-\resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
-\resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+\resumeItem{Designed the game logic, GUI and bot, in a team of 3, using Java , JavaFX (GUI) and JUnit (testing).}
+\resumeItem{Followed Agile (Scrum) methodology, acting as the Scrum Master for multiple sprints.}
 \resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://drive.google.com/file/d/1uwZpb3X_Qh47Q82x8_q9oTO0uWI-9oEP/view}{\textbf{Investment Portfolio Optimisation} $|$
+		\emph{Microsoft Excel}}}{Mar. -- Apr. 2020}
+\resumeItemListStart
+\resumeItem{Modelled the stock price behaviour of 8 companies and optimised a two-week investment strategy with
+	82\% accuracy, using integer linear programming, regression and volume risk analysis.}
+\resumeItemListEnd
+
+
 \resumeSubHeadingListEnd
 
+
+%------------EXTRACURRICULAR----------------
+\section{Extracurricular}
+\resumeSubHeadingListStart
+
+\resumeItemListStart
+\resumeItem{\textbf{Student Ambassador}: UCD spokesperson, representative and point of contact for prospective students.}
+\resumeItem{\textbf{Class Representative}: elected representative to the UCD Students’ Union for Computer Science students.}
+\resumeItem{\textbf{Computer Science Peer Mentor}: advisor to 10 first-year Computer Science students.}
+\resumeItem{\textbf{CS Sparks}: coding workshop facilitator for students from DEIS schools in their Transition Year.}
+\resumeItem{\textbf{Photography}: keen interest in nature, street and event photography; active member of Photography Club.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
