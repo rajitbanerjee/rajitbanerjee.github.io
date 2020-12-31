@@ -2,7 +2,7 @@
 
 My portfolio website, with custom features and effects added to a beautiful initial design template by [@ajlkn](https://github.com/ajlkn).
 
-<img src="screenshot.png" width="750">
+<img src="screenshot.png" width="800">
 
 ## Credits
 
