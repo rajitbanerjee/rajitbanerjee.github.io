@@ -19,19 +19,3 @@ function resetCursor() {
   el.style.animation = null;
 }
 
-/* SWITCH THEME */
-
-function switchTheme() {
-  // Toggle theme
-  let sections = document.getElementsByTagName("section");
-  for (let i = 0; i < sections.length; i++) {
-    sections[i].classList.toggle("invert");
-  }
-  let footer = document.getElementsByTagName("footer");
-  footer[0].classList.toggle("invert");
-
-  // Reset name typewriter cursor
-  document.getElementById("typing").innerHTML = "";
-  i = 0;
-  typeWriter();
-}
