@@ -85,8 +85,10 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
 
+\newcommand{\resumeSimpleListStart}{\renewcommand\labelitemi{\tiny$\bullet$}\begin{itemize}[itemsep=1pt]}
+\newcommand{\resumeSimpleListEnd}{\end{itemize}\vspace{-1pt}}
 
 %-----------RESUME CONTENT-----------
 \begin{document}
@@ -117,18 +119,18 @@
 {\textbf{BSc (Hons.) Computer Science with Data Science}}{Sep. 2018 -- Jun. 2022 (Expected)}
 
 \resumeItemListStart
-\resumeItem{\textbf{GPA}: 4.11/4.20 (First Class Honours)}
-\resumeItem{\textbf{Coursework}:
+\resumeItem{\textbf{GPA:} 4.16/4.20 (First Class Honours)}
+\resumeItem{\textbf{Coursework:}
 	Data Structures, Algorithms,
-	Introduction to AI,
 	Programming for Big Data,
 	Databases \& Information Systems,
-	Business Analytics,
+	Introduction to AI,
 	Software Engineering I \& II,
 	Linear Algebra II,
+	Business Analytics,
 	Social Entrepreneurship}
 
-\resumeItem{\textbf{Honours and Awards}:
+\resumeItem{\textbf{Honours and Awards:}
 	\href{https://www.ucd.ie/adastraacademy/academic/}{UCD Ad Astra Academic Scholarship},
 	\href{https://www.ucd.ie/global/scholarships/}{UCD Global Undergraduate Scholarship},
 	BSc Computer Science Scholarship
@@ -145,12 +147,13 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
-	      \textbf{Languages}{: Python, Java, Go, SQL (MySQL, BigQuery), HTML/CSS, C, Scheme (Racket), R} \\
-	      \textbf{Tools}{: Git, Docker, Agile (Scrum, Kanban), Linux/Shell, MS Excel, Tableau, Vim, VS Code, IntelliJ IDEA} \\
+	      \textbf{Development:}{ Python, Java, Go, Linux/Shell, HTML/CSS, C, Scheme (Racket)} \\
+	      \textbf{Databases \& Big Data:}{ MySQL, MongoDB, Apache Spark} \\
+	      \textbf{Tools:}{ Git, Docker, Agile (Scrum, Kanban), Neovim, VS Code, IntelliJ IDEA, LaTeX, Tableau} \\
 	      }}
 
 	      \small{\item{
-	      \textbf{Certificates}{:
+	      \textbf{Certificates:}{
 		      Virtual Internships
 		      (\href{https://insidesherpa.s3.amazonaws.com/completion-certificates/KPMG/m7W4GMqeT3bh9Nb2c_KPMG_oXfzxXCwznR6kbwCr_completion_certificate.pdf}{KPMG (Data Analytics)},
 		      \href{https://insidesherpa.s3.amazonaws.com/completion-certificates/JP\%20Morgan/R5iK7HMxJGBgaSbvk_JPMorgan\%20Chase_oXfzxXCwznR6kbwCr_completion_certificate.pdf}{JPMorgan Chase \& Co. (Software Engineering)}),
@@ -171,6 +174,13 @@
 %------------WORK EXPERIENCE-------------
 \section{Work Experience}
 \resumeSubHeadingListStart
+
+\resumeSubheading
+{\href{https://aws.amazon.com/}{Amazon Web Services}}{Dublin, Ireland}
+{\textbf{Software Development Engineer Intern}}{Mar. 2021 -- Present}
+\resumeItemListStart
+\resumeItem{Intern in the AWS Enterprise Engineering department.}
+\resumeItemListEnd
 
 \resumeSubheading
 {\href{https://www.insight-centre.org/}{Insight SFI Research Centre for Data Analytics}}{Dublin, Ireland}
@@ -212,31 +222,21 @@
 \resumeItem{Followed Agile (Scrum) methodology, acting as the Scrum Master for multiple sprints.}
 \resumeItemListEnd
 
-\resumeProjectHeading
-{\href{https://drive.google.com/file/d/1uwZpb3X_Qh47Q82x8_q9oTO0uWI-9oEP/view}{\textbf{Investment Portfolio Optimisation} $|$
-		\emph{Microsoft Excel}}}{Mar. -- Apr. 2020}
-\resumeItemListStart
-\resumeItem{Modelled the stock price behaviour of 8 companies and optimised a two-week investment strategy with
-	82\% accuracy, using integer linear programming, regression and volume risk analysis.}
-\resumeItemListEnd
-
 
 \resumeSubHeadingListEnd
 
 
 %------------EXTRACURRICULAR----------------
 \section{Extracurricular}
-\resumeSubHeadingListStart
 
-\resumeItemListStart
+\resumeSimpleListStart
 \resumeItem{\textbf{Student Ambassador}: UCD spokesperson, representative and point of contact for prospective students.}
 \resumeItem{\textbf{Class Representative}: elected representative to the UCD Students’ Union for Computer Science students.}
 \resumeItem{\textbf{Computer Science Peer Mentor}: advisor to 10 first-year Computer Science students.}
 \resumeItem{\textbf{CS Sparks}: coding workshop facilitator for students from DEIS schools in their Transition Year.}
 \resumeItem{\textbf{Photography}: keen interest in nature, street and event photography; active member of Photography Club.}
-\resumeItemListEnd
+\resumeSimpleListEnd
 
-\resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
