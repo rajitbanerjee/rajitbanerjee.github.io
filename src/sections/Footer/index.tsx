@@ -5,10 +5,11 @@ import { AiOutlineMail } from "react-icons/ai";
 const Footer: React.FC = (): JSX.Element => {
   return (
     <VStack
-      position="absolute"
+      position="relative"
       bottom={0}
-      width="1.0"
-      height="7rem"
+      width="100%"
+      paddingTop="10rem"
+      paddingBottom="2rem"
       spacing={7}
     >
       <HStack spacing={5}>

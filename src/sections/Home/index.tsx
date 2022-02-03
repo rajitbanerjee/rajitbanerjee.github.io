@@ -8,7 +8,7 @@ import TypeWriterEffect from "react-typewriter-effect";
 
 const Home: React.FC = (): JSX.Element => {
   return (
-    <VStack align="left" spacing={10}>
+    <VStack align="left" spacing={10} justifyContent="center" height="100vh">
       <Name />
       <Job />
       <Contact />

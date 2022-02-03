@@ -15,7 +15,6 @@ const theme = extendTheme({
         margin: 0,
         backgroundColor: colors.bg,
         color: colors.fg,
-        minH: "100vh",
       },
 
       a: {
