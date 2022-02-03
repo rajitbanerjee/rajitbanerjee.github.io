@@ -1,20 +1,18 @@
+import { VStack } from "@chakra-ui/react";
 import React from "react";
-import logo from "logo.svg";
-import "./App.css";
+import Footer from "sections/Footer";
+import Home from "sections/Home";
+import Photography from "sections/Photography";
+import Skills from "sections/Skills";
 
 const App: React.FC = (): JSX.Element => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/components/App/index.tsx</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
+    <VStack>
+      <Home />
+      <Skills />
+      <Photography />
+      <Footer />
+    </VStack>
   );
 };
 
