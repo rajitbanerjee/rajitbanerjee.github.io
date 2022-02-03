@@ -1,13 +1,7 @@
 # [rajitbanerjee.com](https://rajitbanerjee.com)
 
-My portfolio website, with custom features and effects added to a beautiful initial design template by [@ajlkn](https://github.com/ajlkn).
-
-## Credits
-
-- Template: [HTML5 UP](https://html5up.net), [@ajlkn](https://github.com/ajlkn)
-- Icons: [Font Awesome](https://fontawesome.io)
-- Other: [jQuery](https://jquery.com), [Scrollex](https://github.com/ajlkn/jquery.scrollex), [Responsive Tools](https://github.com/ajlkn/responsive-tools)
+My portfolio website, built with TypeScript/React.js (Create React App).
 
 ## License
 
-[MIT](./LICENSE). However, all data is owned by [@rajitbanerjee](https://github.com/rajitbanerjee).
+[MIT](./LICENSE). Data owned by [@rajitbanerjee](https://github.com/rajitbanerjee).
