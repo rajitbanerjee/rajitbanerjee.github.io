@@ -16,7 +16,6 @@ const theme = extendTheme({
         backgroundColor: colors.bg,
         color: colors.fg,
         minH: "100vh",
-        textAlign: "center",
       },
 
       a: {
