@@ -73,4 +73,3 @@ const Contact: React.FC = (): JSX.Element => {
     </VStack>
   );
 };
-

@@ -19,4 +19,3 @@ export const App: React.FC = (): JSX.Element => {
     </VStack>
   );
 };
-

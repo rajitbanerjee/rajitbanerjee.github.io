@@ -11,7 +11,7 @@ const LogoLink: React.FC<Props> = ({ src, href, alt }) => {
     <Image
       src={src}
       fallbackSrc="/images/logo.png"
-      height="50px"
+      height="40px"
       alt={alt}
       onClick={() => window.open(href, "_blank")}
     />

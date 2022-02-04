@@ -12,10 +12,8 @@ export const Skills: React.FC = (): JSX.Element => {
       backgroundSize="100%"
       backgroundRepeat="no-repeat"
       justifyContent="center"
-      height="60rem"
     >
       <Card contents={<Contents />} />
     </VStack>
   );
 };
-

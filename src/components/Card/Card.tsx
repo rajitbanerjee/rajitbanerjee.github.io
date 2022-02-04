@@ -10,11 +10,9 @@ export const Card: React.FC<CardProps> = ({ contents }): JSX.Element => {
   return (
     <Box
       borderColor={colors.bg}
-      borderRadius="5px"
-      boxShadow="md"
-      padding="1em"
+      borderRadius="25px"
       backgroundColor={colors.bg}
-      margin={10}
+      margin="5rem"
     >
       {contents}
     </Box>

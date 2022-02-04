@@ -1,4 +1,4 @@
-import { Button, Text, VStack, Flex } from "@chakra-ui/react";
+import { Button, Flex, Text, VStack } from "@chakra-ui/react";
 import colors from "custom/colors";
 import React from "react";
 import LogoLink from "./LogoLink";
@@ -39,8 +39,8 @@ const Contents: React.FC = (): JSX.Element => {
 const Section1: React.FC = (): JSX.Element => {
   return (
     <VStack align="center" spacing={4}>
-      <Text>development</Text>
-      <Flex direction="row" wrap="wrap" justify="center" gap="10px">
+      <Text align="center">development</Text>
+      <Flex justify="center" direction="row" wrap="wrap" gap="10px">
         <LogoLink
           src="/images/tools/java.svg"
           alt="Java"
@@ -89,8 +89,8 @@ const Section1: React.FC = (): JSX.Element => {
 const Section2: React.FC = (): JSX.Element => {
   return (
     <VStack align="center" spacing={4}>
-      <Text>deployment, cloud & version control</Text>
-      <Flex direction="row" wrap="wrap" justify="center" gap="10px">
+      <Text align="center">deployment, cloud & version control</Text>
+      <Flex justify="center" direction="row" wrap="wrap" gap="10px">
         <LogoLink
           src="/images/tools/aws.png"
           alt="AWS"
@@ -114,8 +114,8 @@ const Section2: React.FC = (): JSX.Element => {
 const Section3: React.FC = (): JSX.Element => {
   return (
     <VStack align="center" spacing={4}>
-      <Text>databases & big data</Text>
-      <Flex direction="row" wrap="wrap" justify="center" gap="10px">
+      <Text align="center">databases & big data</Text>
+      <Flex justify="center" direction="row" wrap="wrap" gap="10px">
         <LogoLink
           src="/images/tools/mysql.png"
           alt="MySQL"
@@ -144,8 +144,8 @@ const Section3: React.FC = (): JSX.Element => {
 const Section4: React.FC = (): JSX.Element => {
   return (
     <VStack align="center" spacing={4}>
-      <Text>problem solving</Text>
-      <Flex direction="row" wrap="wrap" justify="center" gap="10px">
+      <Text align="center">problem solving</Text>
+      <Flex justify="center" direction="row" wrap="wrap" gap="10px">
         <LogoLink
           src="/images/tools/aoc.jpg"
           alt="Advent of Code"
