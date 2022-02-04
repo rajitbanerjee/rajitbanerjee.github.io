@@ -19,6 +19,12 @@ My portfolio website, built with TypeScript/React.js (Create React App).
   serve -s build
   ```
 
+- Deployment to `gh-pages` branch:
+  ```bash
+  npm run deploy
+  ```
+  GitHub Pages requires configuration of source branch as `gh-pages`, and optionally a custom domain under repository `Settings > Pages`.
+
 ## License
 
 [MIT](./LICENSE).<br/>
