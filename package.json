@@ -1,7 +1,9 @@
 {
   "name": "website",
   "version": "0.1.0",
+  "repository": "https://github.com/rajitbanerjee/rajitbanerjee.github.io",
   "homepage": "https://rajitbanerjee.github.io",
+  "license": "MIT",
   "private": false,
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.2",
@@ -33,7 +35,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "echo 'rajitbanerjee.com' > ./build/CNAME && gh-pages -d build",
     "build": "react-scripts build",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "test": "react-scripts test",

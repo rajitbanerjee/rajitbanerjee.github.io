@@ -23,7 +23,6 @@ My portfolio website, built with TypeScript/React.js (Create React App).
   ```bash
   npm run deploy
   ```
-  GitHub Pages requires configuration of source branch as `gh-pages`, and optionally a custom domain under repository `Settings > Pages`.
 
 ## License
 
