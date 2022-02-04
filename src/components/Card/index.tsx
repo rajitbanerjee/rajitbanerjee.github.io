@@ -1,11 +1,14 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import colors from "custom/colors";
 import React from "react";
 
-const Card: React.FC = () => {
+interface Props {
+  contents: JSX.Element;
+}
+
+const Card: React.FC<Props> = ({ contents }): JSX.Element => {
   return (
     <Box
-      borderWidth="1px"
       borderColor={colors.bg}
       borderRadius="5px"
       boxShadow="md"
@@ -13,7 +16,7 @@ const Card: React.FC = () => {
       backgroundColor={colors.bg}
       margin={10}
     >
-      {<Text>Hello</Text>}
+      {contents}
     </Box>
   );
 };

@@ -1,6 +1,7 @@
-import { Text, VStack, IconButton, HStack } from "@chakra-ui/react";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { HStack, Text, VStack } from "@chakra-ui/react";
 import { AiOutlineMail } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import IconLink from "./IconLink";
 
 const Footer: React.FC = (): JSX.Element => {
   return (
@@ -34,29 +35,10 @@ const Footer: React.FC = (): JSX.Element => {
   );
 };
 
-interface Props {
-  alt: string;
-  icon: JSX.Element;
-  href: string;
-}
-
-const IconLink: React.FC<Props> = ({ alt, icon, href }) => {
-  return (
-    <IconButton
-      variant="ghost"
-      aria-label={alt}
-      icon={icon}
-      size="lg"
-      isRound
-      onClick={() => window.open(href, "_blank")}
-    ></IconButton>
-  );
-};
-
 const getYearRange = (): string => {
   const start = 2021;
   const curr = new Date().getFullYear();
-  return curr === start ? curr.toString() : `${start} - ${curr}`;
+  return curr === start ? curr.toString() : `${start}-${curr}`;
 };
 
 export default Footer;

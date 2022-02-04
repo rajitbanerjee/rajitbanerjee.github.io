@@ -1,6 +1,7 @@
 import { VStack } from "@chakra-ui/react";
 import Card from "components/Card";
 import React from "react";
+import Contents from "./Contents";
 
 const Skills: React.FC = (): JSX.Element => {
   return (
@@ -11,9 +12,9 @@ const Skills: React.FC = (): JSX.Element => {
       backgroundSize="100%"
       backgroundRepeat="no-repeat"
       justifyContent="center"
-      height="100vh"
+      height="60rem"
     >
-      <Card></Card>
+      <Card contents={<Contents />} />
     </VStack>
   );
 };
