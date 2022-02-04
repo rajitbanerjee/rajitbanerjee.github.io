@@ -1,4 +1,4 @@
-import { Button, Text, VStack, Stack } from "@chakra-ui/react";
+import { Button, Text, VStack, Flex } from "@chakra-ui/react";
 import colors from "custom/colors";
 import React from "react";
 import LogoLink from "./LogoLink";
@@ -6,10 +6,10 @@ import LogoLink from "./LogoLink";
 const Contents: React.FC = (): JSX.Element => {
   return (
     <VStack
-      paddingTop="3rem"
-      paddingRight="3rem"
-      paddingLeft="3rem"
-      paddingBottom="3rem"
+      paddingTop="2rem"
+      paddingRight="2rem"
+      paddingLeft="2rem"
+      paddingBottom="2rem"
       spacing={12}
     >
       <VStack spacing={12} align="center">
@@ -40,54 +40,48 @@ const Section1: React.FC = (): JSX.Element => {
   return (
     <VStack align="center" spacing={4}>
       <Text>development</Text>
-      <VStack>
-        <Stack direction="row" spacing={3}>
-          <LogoLink
-            src="/images/tools/java.svg"
-            alt="Java"
-            href="https://www.oracle.com/ie/java/"
-          />
-          <LogoLink
-            src="/images/tools/python.svg"
-            alt="Python"
-            href="https://www.python.org/"
-          />
-          <LogoLink
-            src="/images/tools/ts.png"
-            alt="TypeScript"
-            href="https://www.typescriptlang.org"
-          />
-          <LogoLink
-            src="/images/tools/node.jpg"
-            alt="NodeJS"
-            href="https://nodejs.org/en/"
-          />
-          <LogoLink
-            src="/images/tools/react.png"
-            alt="ReactJS"
-            href="https://reactjs.org"
-          />
-        </Stack>
-      </VStack>
-      <VStack>
-        <Stack direction="row" spacing={3}>
-          <LogoLink
-            src="/images/tools/spring.png"
-            alt="Spring"
-            href="https://spring.io/projects/spring-boot"
-          />
-          <LogoLink
-            src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg"
-            alt="GraphQL"
-            href="https://graphql.org"
-          />
-          <LogoLink
-            src="/images/tools/bash.png"
-            alt="Bash"
-            href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)"
-          />
-        </Stack>
-      </VStack>
+      <Flex direction="row" wrap="wrap" justify="center" gap="10px">
+        <LogoLink
+          src="/images/tools/java.svg"
+          alt="Java"
+          href="https://www.oracle.com/ie/java/"
+        />
+        <LogoLink
+          src="/images/tools/python.svg"
+          alt="Python"
+          href="https://www.python.org/"
+        />
+        <LogoLink
+          src="/images/tools/ts.png"
+          alt="TypeScript"
+          href="https://www.typescriptlang.org"
+        />
+        <LogoLink
+          src="/images/tools/node.jpg"
+          alt="NodeJS"
+          href="https://nodejs.org/en/"
+        />
+        <LogoLink
+          src="/images/tools/react.png"
+          alt="ReactJS"
+          href="https://reactjs.org"
+        />
+        <LogoLink
+          src="/images/tools/spring.png"
+          alt="Spring"
+          href="https://spring.io/projects/spring-boot"
+        />
+        <LogoLink
+          src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg"
+          alt="GraphQL"
+          href="https://graphql.org"
+        />
+        <LogoLink
+          src="/images/tools/bash.png"
+          alt="Bash"
+          href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)"
+        />
+      </Flex>
     </VStack>
   );
 };
@@ -96,7 +90,7 @@ const Section2: React.FC = (): JSX.Element => {
   return (
     <VStack align="center" spacing={4}>
       <Text>deployment, cloud & version control</Text>
-      <Stack direction="row" spacing={3}>
+      <Flex direction="row" wrap="wrap" justify="center" gap="10px">
         <LogoLink
           src="/images/tools/aws.png"
           alt="AWS"
@@ -112,7 +106,7 @@ const Section2: React.FC = (): JSX.Element => {
           alt="Git"
           href="https://git-scm.com/"
         />
-      </Stack>
+      </Flex>
     </VStack>
   );
 };
@@ -121,7 +115,7 @@ const Section3: React.FC = (): JSX.Element => {
   return (
     <VStack align="center" spacing={4}>
       <Text>databases & big data</Text>
-      <Stack direction="row" spacing={3}>
+      <Flex direction="row" wrap="wrap" justify="center" gap="10px">
         <LogoLink
           src="/images/tools/mysql.png"
           alt="MySQL"
@@ -142,7 +136,7 @@ const Section3: React.FC = (): JSX.Element => {
           alt="Apache Spark"
           href="https://spark.apache.org/"
         />
-      </Stack>
+      </Flex>
     </VStack>
   );
 };
@@ -151,7 +145,7 @@ const Section4: React.FC = (): JSX.Element => {
   return (
     <VStack align="center" spacing={4}>
       <Text>problem solving</Text>
-      <Stack direction="row" spacing={3}>
+      <Flex direction="row" wrap="wrap" justify="center" gap="10px">
         <LogoLink
           src="/images/tools/aoc.jpg"
           alt="Advent of Code"
@@ -172,7 +166,7 @@ const Section4: React.FC = (): JSX.Element => {
           alt="LeetCode"
           href="https://github.com/rajitbanerjee/leetcode"
         />
-      </Stack>
+      </Flex>
     </VStack>
   );
 };
