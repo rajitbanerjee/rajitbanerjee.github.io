@@ -1,12 +1,12 @@
 import { IconButton } from "@chakra-ui/react";
 
-interface Props {
+interface IconLinkProps {
   alt: string;
   icon: JSX.Element;
   href: string;
 }
 
-const IconLink: React.FC<Props> = ({ alt, icon, href }) => {
+const IconLink: React.FC<IconLinkProps> = ({ alt, icon, href }) => {
   return (
     <IconButton
       variant="ghost"
