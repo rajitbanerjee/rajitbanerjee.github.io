@@ -13,41 +13,48 @@ const Footer: React.FC = (): JSX.Element => {
       spacing={7}
     >
       <HStack spacing={5}>
-        <IconButton
-          variant="outline"
-          aria-label="LinkedIn"
+        <IconLink
+          alt="LinkedIn"
           icon={<FaLinkedinIn />}
-          isRound
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/rajitbanerjee", "_blank")
-          }
-        ></IconButton>
-        <IconButton
-          variant="outline"
-          aria-label="GitHub"
+          href="https://www.linkedin.com/in/rajitbanerjee"
+        />
+        <IconLink
+          alt="GitHub"
           icon={<FaGithub />}
-          isRound
-          onClick={() =>
-            window.open("https://github.com/rajitbanerjee", "_blank")
-          }
-        ></IconButton>
-        <IconButton
-          variant="outline"
-          aria-label="Email"
+          href="https://github.com/rajitbanerjee"
+        />
+        <IconLink
+          alt="Email"
           icon={<AiOutlineMail />}
-          isRound
-          onClick={() =>
-            window.open("mailto:rajit.banerjee@ucdconnect.ie", "_blank")
-          }
-        ></IconButton>
+          href="mailto:rajit.banerjee@ucdconnect.ie"
+        />
       </HStack>
       <Text>&copy; {getYearRange()} Rajit Banerjee</Text>
     </VStack>
   );
 };
 
+interface Props {
+  alt: string;
+  icon: JSX.Element;
+  href: string;
+}
+
+const IconLink: React.FC<Props> = ({ alt, icon, href }) => {
+  return (
+    <IconButton
+      variant="ghost"
+      aria-label={alt}
+      icon={icon}
+      size="lg"
+      isRound
+      onClick={() => window.open(href, "_blank")}
+    ></IconButton>
+  );
+};
+
 const getYearRange = (): string => {
-  const start = 2022;
+  const start = 2021;
   const curr = new Date().getFullYear();
   return curr === start ? curr.toString() : `${start} - ${curr}`;
 };
