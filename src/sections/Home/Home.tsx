@@ -1,10 +1,9 @@
 import { HStack, Text, VStack } from "@chakra-ui/react";
 import ExternalURL from "components/ExternalURL";
-import colors from "custom/colors";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import TypeWriterEffect from "react-typewriter-effect";
+import Typewriter, { TypewriterClass } from "typewriter-effect";
 
 export const Home: React.FC = (): JSX.Element => {
   return (
@@ -20,13 +19,17 @@ const Name: React.FC = (): JSX.Element => {
   return (
     <VStack align="left" spacing={7}>
       <Text>$ /usr/bin/whoami</Text>
-      <TypeWriterEffect
-        textStyle={{ fontSize: "30px" }}
-        startDelay={100}
-        cursorColor={colors.accent}
-        text="Rajit Banerjee"
-        typeSpeed={100}
-        hideCursorAfterText
+      <Typewriter
+        onInit={(typewriter: TypewriterClass) => {
+          typewriter
+            .typeString('<span style="font-size: 175%;">Rajit Banerjee</span>')
+            .pauseFor(100)
+            .start();
+        }}
+        options={{
+          cursor: "",
+          delay: 75,
+        }}
       />
     </VStack>
   );
