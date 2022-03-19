@@ -1,8 +1,7 @@
 import { HStack, Text, VStack } from "@chakra-ui/react";
 import { TextLink } from "components";
+import { socialLinks } from "config/social";
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Typewriter, { TypewriterClass } from "typewriter-effect";
 
 export const Home: React.FC = (): JSX.Element => {
@@ -52,23 +51,12 @@ const Contact: React.FC = (): JSX.Element => {
     <VStack align="left" spacing={7}>
       <Text>$ cat contact.md</Text>
       <HStack spacing={7}>
-        <HStack>
-          <FaLinkedinIn size={20} />
-          <TextLink
-            text="LinkedIn"
-            href="https://www.linkedin.com/in/rajitbanerjee"
-          />
-        </HStack>
-
-        <HStack>
-          <FaGithub size={20} />
-          <TextLink text="GitHub" href="https://github.com/rajitbanerjee" />
-        </HStack>
-
-        <HStack>
-          <AiOutlineMail size={20} />
-          <TextLink text="Email" href="mailto:rajit.banerjee@ucdconnect.ie" />
-        </HStack>
+        {socialLinks.map(({ alt: text, icon, href }, i) => (
+          <HStack key={i.toString()}>
+            {icon.home}
+            <TextLink text={text} href={href} />
+          </HStack>
+        ))}
       </HStack>
     </VStack>
   );

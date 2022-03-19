@@ -1,6 +1,6 @@
 import { Button, Flex, Text, VStack } from "@chakra-ui/react";
-import { Card, ButtonLink } from "components";
-import { colors } from "custom";
+import { ButtonLink, Card } from "components";
+import { colors } from "config/colors";
 import React from "react";
 
 export const Skills: React.FC = (): JSX.Element => {

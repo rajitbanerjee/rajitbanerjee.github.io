@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { colors } from "custom";
+import { colors } from "config/colors";
 import React from "react";
 
 interface CardProps {

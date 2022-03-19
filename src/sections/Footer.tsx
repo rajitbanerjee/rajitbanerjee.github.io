@@ -1,7 +1,6 @@
 import { HStack, Text, VStack } from "@chakra-ui/react";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { IconLink } from "components";
+import { FooterLink } from "components";
+import { socialLinks } from "config/social";
 
 export const Footer: React.FC = (): JSX.Element => {
   return (
@@ -14,21 +13,14 @@ export const Footer: React.FC = (): JSX.Element => {
       spacing={7}
     >
       <HStack spacing={5}>
-        <IconLink
-          alt="LinkedIn"
-          icon={<FaLinkedinIn />}
-          href="https://www.linkedin.com/in/rajitbanerjee"
-        />
-        <IconLink
-          alt="GitHub"
-          icon={<FaGithub />}
-          href="https://github.com/rajitbanerjee"
-        />
-        <IconLink
-          alt="Email"
-          icon={<AiOutlineMail />}
-          href="mailto:rajit.banerjee@ucdconnect.ie"
-        />
+        {socialLinks.map(({ alt, icon, href }, i) => (
+          <FooterLink
+            key={i.toString()}
+            alt={alt}
+            icon={icon.footer}
+            href={href}
+          />
+        ))}
       </HStack>
       <Text>&copy; {getYearRange()} Rajit Banerjee</Text>
     </VStack>

@@ -1,12 +1,12 @@
 import { IconButton } from "@chakra-ui/react";
 
-interface IconLinkProps {
+interface FooterLinkProps {
   alt: string;
   icon: JSX.Element;
   href: string;
 }
 
-export const IconLink: React.FC<IconLinkProps> = ({ alt, icon, href }) => {
+export const FooterLink: React.FC<FooterLinkProps> = ({ alt, icon, href }) => {
   return (
     <IconButton
       variant="ghost"
