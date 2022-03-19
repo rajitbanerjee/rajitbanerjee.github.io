@@ -1,7 +1,6 @@
 import { HStack, Text, VStack } from "@chakra-ui/react";
 import { TextLink } from "components";
 import { socialLinks } from "config/social";
-import React from "react";
 import Typewriter, { TypewriterClass } from "typewriter-effect";
 
 export const Home: React.FC = (): JSX.Element => {
