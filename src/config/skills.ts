@@ -50,7 +50,6 @@ export const tools: {
     alt: "Bash",
     href: "https://en.wikipedia.org/wiki/Bash_(Unix_shell)",
   },
-
   aws: {
     src: "/images/tools/aws.png",
     alt: "AWS",
