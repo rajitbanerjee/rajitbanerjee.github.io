@@ -72,9 +72,10 @@ const Section1: React.FC = (): JSX.Element => {
           href="https://www.typescriptlang.org"
         />
         <ButtonLink
-          src="/images/tools/node.jpg"
+          src="/images/tools/node.png"
           alt="NodeJS"
           href="https://nodejs.org/en/"
+          imageHeight="25px"
         />
         <ButtonLink
           src="/images/tools/react.png"
@@ -110,6 +111,7 @@ const Section2: React.FC = (): JSX.Element => {
           src="/images/tools/aws.png"
           alt="AWS"
           href="https://aws.amazon.com/"
+          imageHeight="25px"
         />
         <ButtonLink
           src="/images/tools/docker.png"
@@ -117,9 +119,10 @@ const Section2: React.FC = (): JSX.Element => {
           href="https://www.docker.com/"
         />
         <ButtonLink
-          src="/images/tools/git.svg"
+          src="/images/tools/git.png"
           alt="Git"
           href="https://git-scm.com/"
+          imageHeight="20px"
         />
       </Flex>
     </VStack>
@@ -145,11 +148,13 @@ const Section3: React.FC = (): JSX.Element => {
           src="/images/tools/mongo.png"
           alt="MongoDB"
           href="https://www.mongodb.com/"
+          imageHeight="20px"
         />
         <ButtonLink
           src="/images/tools/spark.png"
           alt="Apache Spark"
           href="https://spark.apache.org/"
+          imageHeight="30px"
         />
       </Flex>
     </VStack>

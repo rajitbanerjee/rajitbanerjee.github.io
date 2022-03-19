@@ -1,19 +1,32 @@
-import { Image } from "@chakra-ui/react";
+import { Button, Image } from "@chakra-ui/react";
 
-interface Props {
+interface ButtonLinkProps {
   src: string;
   href: string;
   alt: string;
+  imageHeight?: string;
 }
 
-export const ButtonLink: React.FC<Props> = ({ src, href, alt }) => {
+export const ButtonLink: React.FC<ButtonLinkProps> = ({
+  src,
+  href,
+  alt,
+  imageHeight,
+}) => {
+  if (!imageHeight) imageHeight = "40px";
   return (
-    <Image
-      src={src}
-      fallbackSrc="/images/logo.png"
-      height="40px"
-      alt={alt}
+    <Button
+      variant="ghost"
+      px={1}
+      py={6}
       onClick={() => window.open(href, "_blank")}
-    />
+    >
+      <Image
+        src={src}
+        fallbackSrc="/images/logo.png"
+        height={imageHeight}
+        alt={alt}
+      />
+    </Button>
   );
 };
