@@ -19,10 +19,7 @@ My portfolio website, built with TypeScript/React.js (Create React App).
   serve -s build
   ```
 
-- Deployment to `gh-pages` branch:
-  ```bash
-  npm run deploy
-  ```
+- Deployment: [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)
 
 ## License
 
