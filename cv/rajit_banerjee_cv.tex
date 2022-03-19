@@ -50,13 +50,13 @@
 
 
 %---------CUSTOM COMMANDS--------
-\newcommand{\resumeItem}[1]{
+\newcommand{\cvItem}[1]{
 	\item\small{
 		{#1 \vspace{-2pt}}
 	}
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\cvSubheading}[4]{
 	\vspace{-2pt}\item
 	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
@@ -64,31 +64,31 @@
 	\end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
+\newcommand{\cvSubSubheading}[2]{
 	\item
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
 		\textit{\small#1} & \textit{\small #2} \\
 	\end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
+\newcommand{\cvProjectHeading}[2]{
 	\item
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
 		\small#1 & #2 \\
 	\end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\cvSubItem}[1]{\cvItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-		\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-		\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\cvSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+		\newcommand{\cvSubHeadingListEnd}{\end{itemize}}
+\newcommand{\cvItemListStart}{\begin{itemize}}
+		\newcommand{\cvItemListEnd}{\end{itemize}\vspace{-1pt}}
 
-\newcommand{\resumeSimpleListStart}{\renewcommand\labelitemi{\tiny$\bullet$}\begin{itemize}[itemsep=1pt]}
-		\newcommand{\resumeSimpleListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\cvSimpleListStart}{\renewcommand\labelitemi{\tiny$\bullet$}\begin{itemize}[itemsep=1pt]}
+		\newcommand{\cvSimpleListEnd}{\end{itemize}\vspace{-1pt}}
 
 %-----------RESUME CONTENT-----------
 \begin{document}
@@ -113,14 +113,14 @@
 
 %--------------EDUCATION--------------
 \section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
+\cvSubHeadingListStart
+\cvSubheading
 {University College Dublin}{Sep. 2018 -- May 2022 (Expected)}
 {\textbf{BSc (Hons.) Computer Science with Data Science}}{Dublin, Ireland}
 
-\resumeItemListStart
-\resumeItem{\textbf{Current GPA:} 4.18/4.20 (First Class Honours)}
-\resumeItem{\textbf{Relevant Coursework:}
+\cvItemListStart
+\cvItem{\textbf{Current GPA:} 4.18/4.20 (First Class Honours)}
+\cvItem{\textbf{Relevant Coursework:}
 	Data Structures, Algorithms,
 	Distributed Systems,
 	Secure Software Engineering,
@@ -130,7 +130,7 @@
 	Databases \& Information Systems,
 	Cloud Computing}
 
-\resumeItem{\textbf{Honours and Awards:}
+\cvItem{\textbf{Honours and Awards:}
 	\href{https://www.ucd.ie/adastraacademy/academic/}{UCD Ad Astra Academic Scholarship},
 	\href{https://www.ucd.ie/global/scholarships/}{UCD Global Undergraduate Scholarship},
 	BSc Computer Science Scholarship
@@ -139,9 +139,9 @@
 	\href{https://hub.ucd.ie/usis/W_HU_REPORTING.P_DISPLAY_QUERY?p_query=SC101-1A&p_parameters=A8A08F4E214445171B5771A1009E1D5B2E8D2BA93239FA8867648F2551D1F6E74111E7B3FBB422649785AC454612F967AB057463726BFBD2F44F7545DFDE90BF68E76434A9F3F66B2D7280F061B44E47A154491B75B29B1C35AD7E6301B396F3181188D61C833A62D3514A39A8EAC1C1452649CCC93B578B2A8394D0736947AF}{Stage 4}),
 	Insight Research Scholarship,
 	UCD Embark Award}
-\resumeItemListEnd
+\cvItemListEnd
 
-\resumeSubHeadingListEnd
+\cvSubHeadingListEnd
 
 
 %---------------SKILLS------------------
@@ -157,69 +157,69 @@
 
 %------------WORK EXPERIENCE-------------
 \section{Work Experience}
-\resumeSubHeadingListStart
+\cvSubHeadingListStart
 
-\resumeSubheading
+\cvSubheading
 {\href{https://aws.amazon.com/}{Amazon Web Services}}{Mar. 2021 -- Aug. 2021}
 {\textbf{Software Development Engineer Intern} $|$ \emph{AWS, TypeScript, Node.js/Express.js, React.js}}{Dublin, Ireland}
-\resumeItemListStart
-\resumeItem{Project (campaign automation and management): Designed and implemented a campaign automation tool for Amazon Enterprise Engineering (Identity and Authentication).}
-\resumeItem{Integrated the campaign manager with Amazon's ticketing system to minimise human error and communication time during campaigns with over 5000 direct customers.}
-\resumeItem{Developed a Node+Express back-end API with React front-end components, following microservice architecture.}
-\resumeItem{Built and deployed infrastructure securely with AWS services including Lambda (serverless), DynamoDB, S3, StepFunctions, CloudWatch, and so on.}
-\resumeItemListEnd
+\cvItemListStart
+\cvItem{Project (campaign automation and management): Designed and implemented a campaign automation tool for Amazon Enterprise Engineering (Identity and Authentication).}
+\cvItem{Integrated the campaign manager with Amazon's ticketing system to minimise human error and communication time during campaigns with over 5000 direct customers.}
+\cvItem{Developed a Node+Express back-end API with React front-end components, following microservice architecture.}
+\cvItem{Built and deployed infrastructure securely with AWS services including Lambda (serverless), DynamoDB, S3, StepFunctions, CloudWatch, and so on.}
+\cvItemListEnd
 
-\resumeSubheading
+\cvSubheading
 {\href{https://www.insight-centre.org/}{Insight SFI Research Centre for Data Analytics}}{Jun. 2020 -- Aug. 2020}
 {\textbf{Research Intern} $|$ \emph{Python, OpenCV, Docker, Bash}}{Dublin, Ireland}
-\resumeItemListStart
-\resumeItem{Project (human body pose estimation): Performed experiments with multiple pose estimation models to
+\cvItemListStart
+\cvItem{Project (human body pose estimation): Performed experiments with multiple pose estimation models to
 	estimate the body keypoints of novice athletes (runners) using pre-recorded input videos.}
-\resumeItem{Designed Bash scripts and Docker containers to automate video processing on a remote server.}
-\resumeItem{Analysed time-series data and computed a variety of body pose angles from video frames to assist runners with maintaining optimal form and posture.}
-\resumeItemListEnd
+\cvItem{Designed Bash scripts and Docker containers to automate video processing on a remote server.}
+\cvItem{Analysed time-series data and computed a variety of body pose angles from video frames to assist runners with maintaining optimal form and posture.}
+\cvItemListEnd
 
 
-\resumeSubheading
+\cvSubheading
 {\href{https://www.prmfincon.com/}{PRM Fincon Services Pvt. Ltd.}}{Jun. 2019 -- Aug. 2019}
 {\textbf{Python Development Intern} $|$ \emph{Python, OpenCV, Tesseract OCR, Camelot}}{Kolkata, India}
-\resumeItemListStart
-\resumeItem{Project (data extraction from financial reports): Refactored and optimised code to identity and extract tabular data (balance sheets, income statements) from PDFs by applying various image processing techniques.}
-\resumeItemListEnd
+\cvItemListStart
+\cvItem{Project (data extraction from financial reports): Refactored and optimised code to identity and extract tabular data (balance sheets, income statements) from PDFs by applying various image processing techniques.}
+\cvItemListEnd
 
-\resumeSubHeadingListEnd
+\cvSubHeadingListEnd
 
 
 %-----------------PROJECTS-----------------
 \section{Projects}
-\resumeSubHeadingListStart
+\cvSubHeadingListStart
 
-\resumeProjectHeading
+\cvProjectHeading
 {\href{https://github.com/rajitbanerjee/distributed-airways}{\textbf{Distributed Airways} $|$
 		\emph{Java, Spring Boot, GraphQL, TypeScript, React.js}}}{Dec. 2021 -- Jan. 2022}
-\resumeItemListStart
-\resumeItem{Flights metasearch engine simulation built using a Java backend, GraphQL for API design, React (TypeScript) frontend and Docker/Kubernetes for deployment.}
-\resumeItemListEnd
+\cvItemListStart
+\cvItem{Flights metasearch engine simulation built using a Java backend, GraphQL for API design, React (TypeScript) frontend and Docker/Kubernetes for deployment.}
+\cvItemListEnd
 
-\resumeProjectHeading
+\cvProjectHeading
 {\href{https://github.com/rajitbanerjee/Scrabble}{\textbf{Scrabble} $|$
 		\emph{Java, JavaFX, JUnit, Scrum}}}{Jan. 2020 -- May 2020}
-\resumeItemListStart
-\resumeItem{Designed the game logic, GUI and bot, in a team of 3, using Java , JavaFX (GUI) and JUnit (testing).}
-\resumeItem{Followed Agile (Scrum) methodology, acting as the Scrum Master for multiple sprints.}
-\resumeItemListEnd
+\cvItemListStart
+\cvItem{Designed the game logic, GUI and bot, in a team of 3, using Java , JavaFX (GUI) and JUnit (testing).}
+\cvItem{Followed Agile (Scrum) methodology, acting as the Scrum Master for multiple sprints.}
+\cvItemListEnd
 
 
-\resumeSubHeadingListEnd
+\cvSubHeadingListEnd
 
 
 %------------EXTRACURRICULAR----------------
 \section{Extracurricular}
 
-\resumeSimpleListStart
-\resumeItem{\textbf{Class Representative}: elected representative to the UCD Students’ Union (2019-2021) for Computer Science.}
-\resumeItem{\textbf{Computer Science Demonstrator}: Lab tutor/demonstrator for UCD modules COMP20110 Discrete Mathematics, COMP20280 Data Structures and COMP20290 Algorithms.}
-\resumeSimpleListEnd
+\cvSimpleListStart
+\cvItem{\textbf{Class Representative}: elected representative to the UCD Students’ Union (2019-2021) for Computer Science.}
+\cvItem{\textbf{Computer Science Demonstrator}: Lab tutor/demonstrator for UCD modules COMP20110 Discrete Mathematics, COMP20280 Data Structures and COMP20290 Algorithms.}
+\cvSimpleListEnd
 
 
 %-------------------------------------------
