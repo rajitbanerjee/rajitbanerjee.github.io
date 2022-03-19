@@ -1,9 +1,6 @@
 import { VStack } from "@chakra-ui/react";
 import React, { useEffect } from "react";
-import Footer from "sections/Footer";
-import Home from "sections/Home";
-import Photography from "sections/Photography";
-import Skills from "sections/Skills";
+import { Footer, Home, Photography, Skills } from "sections";
 
 export const App: React.FC = (): JSX.Element => {
   useEffect(() => {

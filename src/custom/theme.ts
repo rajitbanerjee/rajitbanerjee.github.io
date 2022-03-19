@@ -1,10 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
-import colors from "./colors";
+import { colors } from "./colors";
 
 const fontFamily =
   "source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace";
 
-const theme = extendTheme({
+export const theme = extendTheme({
   fonts: {
     heading: fontFamily,
     body: fontFamily,
@@ -18,7 +18,6 @@ const theme = extendTheme({
       },
 
       a: {
-        textDecoation: null,
         _hover: {
           color: colors.accent,
           fontWeight: "bold",
@@ -27,5 +26,3 @@ const theme = extendTheme({
     },
   },
 });
-
-export default theme;

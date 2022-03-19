@@ -6,7 +6,7 @@ interface IconLinkProps {
   href: string;
 }
 
-const IconLink: React.FC<IconLinkProps> = ({ alt, icon, href }) => {
+export const IconLink: React.FC<IconLinkProps> = ({ alt, icon, href }) => {
   return (
     <IconButton
       variant="ghost"
@@ -18,5 +18,3 @@ const IconLink: React.FC<IconLinkProps> = ({ alt, icon, href }) => {
     ></IconButton>
   );
 };
-
-export default IconLink;

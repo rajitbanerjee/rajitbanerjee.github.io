@@ -1,12 +1,12 @@
 import { Text } from "@chakra-ui/react";
 import React from "react";
 
-interface ExternalURLProps {
+interface TextLinkProps {
   text: string;
   href: string;
 }
 
-export const ExternalURL: React.FC<ExternalURLProps> = ({
+export const TextLink: React.FC<TextLinkProps> = ({
   text,
   href,
 }): JSX.Element => {

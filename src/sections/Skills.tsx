@@ -1,9 +1,24 @@
 import { Button, Flex, Text, VStack } from "@chakra-ui/react";
-import colors from "custom/colors";
+import { Card, ButtonLink } from "components";
+import { colors } from "custom";
 import React from "react";
-import LogoLink from "./LogoLink";
 
-const Contents: React.FC = (): JSX.Element => {
+export const Skills: React.FC = (): JSX.Element => {
+  return (
+    <VStack
+      w="100%"
+      h="100%"
+      backgroundImage={`url(/images/spotlight.jpg)`}
+      backgroundSize="100%"
+      backgroundRepeat="no-repeat"
+      justifyContent="center"
+    >
+      <Card contents={<SkillsContents />} />
+    </VStack>
+  );
+};
+
+const SkillsContents: React.FC = (): JSX.Element => {
   return (
     <VStack
       paddingTop="2rem"
@@ -41,42 +56,42 @@ const Section1: React.FC = (): JSX.Element => {
     <VStack align="center" spacing={4}>
       <Text align="center">development</Text>
       <Flex justify="center" direction="row" wrap="wrap" gap="10px">
-        <LogoLink
+        <ButtonLink
           src="/images/tools/java.svg"
           alt="Java"
           href="https://www.oracle.com/ie/java/"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/python.svg"
           alt="Python"
           href="https://www.python.org/"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/ts.png"
           alt="TypeScript"
           href="https://www.typescriptlang.org"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/node.jpg"
           alt="NodeJS"
           href="https://nodejs.org/en/"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/react.png"
           alt="ReactJS"
           href="https://reactjs.org"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/spring.png"
           alt="Spring"
           href="https://spring.io/projects/spring-boot"
         />
-        <LogoLink
+        <ButtonLink
           src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg"
           alt="GraphQL"
           href="https://graphql.org"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/bash.png"
           alt="Bash"
           href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)"
@@ -91,17 +106,17 @@ const Section2: React.FC = (): JSX.Element => {
     <VStack align="center" spacing={4}>
       <Text align="center">deployment, cloud & version control</Text>
       <Flex justify="center" direction="row" wrap="wrap" gap="10px">
-        <LogoLink
+        <ButtonLink
           src="/images/tools/aws.png"
           alt="AWS"
           href="https://aws.amazon.com/"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/docker.png"
           alt="Docker"
           href="https://www.docker.com/"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/git.svg"
           alt="Git"
           href="https://git-scm.com/"
@@ -116,22 +131,22 @@ const Section3: React.FC = (): JSX.Element => {
     <VStack align="center" spacing={4}>
       <Text align="center">databases & big data</Text>
       <Flex justify="center" direction="row" wrap="wrap" gap="10px">
-        <LogoLink
+        <ButtonLink
           src="/images/tools/mysql.png"
           alt="MySQL"
           href="https://www.mysql.com/"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/dynamo.png"
           alt="DynamoDB"
           href="https://aws.amazon.com/dynamodb/"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/mongo.png"
           alt="MongoDB"
           href="https://www.mongodb.com/"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/spark.png"
           alt="Apache Spark"
           href="https://spark.apache.org/"
@@ -146,22 +161,22 @@ const Section4: React.FC = (): JSX.Element => {
     <VStack align="center" spacing={4}>
       <Text align="center">problem solving</Text>
       <Flex justify="center" direction="row" wrap="wrap" gap="10px">
-        <LogoLink
+        <ButtonLink
           src="/images/tools/aoc.jpg"
           alt="Advent of Code"
           href="https://github.com/rajitbanerjee/advent-of-code"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/kattis.png"
           alt="Kattis"
           href="https://github.com/rajitbanerjee/kattis"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/hackerrank.png"
           alt="HackerRank"
           href="https://www.hackerrank.com/rajit_banerjee"
         />
-        <LogoLink
+        <ButtonLink
           src="/images/tools/leetcode.png"
           alt="LeetCode"
           href="https://github.com/rajitbanerjee/leetcode"
@@ -170,5 +185,3 @@ const Section4: React.FC = (): JSX.Element => {
     </VStack>
   );
 };
-
-export default Contents;

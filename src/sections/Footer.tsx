@@ -1,7 +1,7 @@
 import { HStack, Text, VStack } from "@chakra-ui/react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import IconLink from "./IconLink";
+import { IconLink } from "components";
 
 export const Footer: React.FC = (): JSX.Element => {
   return (

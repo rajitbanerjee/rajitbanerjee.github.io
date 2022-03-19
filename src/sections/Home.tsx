@@ -1,5 +1,5 @@
 import { HStack, Text, VStack } from "@chakra-ui/react";
-import ExternalURL from "components/ExternalURL";
+import { TextLink } from "components";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -39,7 +39,7 @@ const Job: React.FC = (): JSX.Element => {
   return (
     <VStack align="left" spacing={1}>
       <Text>4th Year Undergraduate Student</Text>
-      <ExternalURL
+      <TextLink
         text="UCD School of Computer Science"
         href="https://ucd.ie/cs"
       />
@@ -54,7 +54,7 @@ const Contact: React.FC = (): JSX.Element => {
       <HStack spacing={7}>
         <HStack>
           <FaLinkedinIn size={20} />
-          <ExternalURL
+          <TextLink
             text="LinkedIn"
             href="https://www.linkedin.com/in/rajitbanerjee"
           />
@@ -62,15 +62,12 @@ const Contact: React.FC = (): JSX.Element => {
 
         <HStack>
           <FaGithub size={20} />
-          <ExternalURL text="GitHub" href="https://github.com/rajitbanerjee" />
+          <TextLink text="GitHub" href="https://github.com/rajitbanerjee" />
         </HStack>
 
         <HStack>
           <AiOutlineMail size={20} />
-          <ExternalURL
-            text="Email"
-            href="mailto:rajit.banerjee@ucdconnect.ie"
-          />
+          <TextLink text="Email" href="mailto:rajit.banerjee@ucdconnect.ie" />
         </HStack>
       </HStack>
     </VStack>

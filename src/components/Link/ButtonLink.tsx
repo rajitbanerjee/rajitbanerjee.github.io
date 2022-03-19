@@ -6,7 +6,7 @@ interface Props {
   alt: string;
 }
 
-const LogoLink: React.FC<Props> = ({ src, href, alt }) => {
+export const ButtonLink: React.FC<Props> = ({ src, href, alt }) => {
   return (
     <Image
       src={src}
@@ -17,5 +17,3 @@ const LogoLink: React.FC<Props> = ({ src, href, alt }) => {
     />
   );
 };
-
-export default LogoLink;
