@@ -21,12 +21,7 @@ export const ButtonLink: React.FC<ButtonLinkProps> = ({
       py={6}
       onClick={() => window.open(href, "_blank")}
     >
-      <Image
-        src={src}
-        fallbackSrc="/images/logo.png"
-        height={imageHeight}
-        alt={alt}
-      />
+      <Image src={src} height={imageHeight} alt={alt} />
     </Button>
   );
 };

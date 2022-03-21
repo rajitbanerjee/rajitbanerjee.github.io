@@ -1,4 +1,4 @@
-export const backgroundImage = "/images/spotlight.jpg";
+export const backgroundImage = "/images/background.jpg";
 export const cv = "https://rajitbanerjee.com/cv/rajit_banerjee_cv.pdf";
 
 export const tools: {
