@@ -10,7 +10,6 @@ export const Footer: React.FC = (): JSX.Element => {
       width="100%"
       paddingTop="10rem"
       paddingBottom="2rem"
-      spacing={7}
     >
       <HStack spacing={5}>
         {socialLinks.map(({ alt, icon, href }, i) => (
@@ -22,6 +21,7 @@ export const Footer: React.FC = (): JSX.Element => {
           />
         ))}
       </HStack>
+      <Text pt="2rem">Photo: Ladakh, India. June 2019.</Text>
       <Text>&copy; {getYearRange()} Rajit Banerjee</Text>
     </VStack>
   );
