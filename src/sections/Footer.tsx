@@ -28,7 +28,7 @@ export const Footer: React.FC = (): JSX.Element => {
 };
 
 const getYearRange = (): string => {
-  const start = 2021;
+  const start = 2020;
   const curr = new Date().getFullYear();
   return curr === start ? curr.toString() : `${start}-${curr}`;
 };
