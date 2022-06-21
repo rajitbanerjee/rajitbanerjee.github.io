@@ -60,21 +60,21 @@
 	\vspace{-2pt}\item
 	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
-		{#3} & #4 \\
+		{\small#3} & \textit{\small #4} \\
 	\end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\cvSubSubheading}[2]{
 	\item
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-		\textit{#1} & \textit{#2} \\
+		\textit{\small#1} & \textit{\small #2} \\
 	\end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\cvProjectHeading}[2]{
 	\item
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-		#1 & #2 \\
+		\small#1 & #2 \\
 	\end{tabular*}\vspace{-7pt}
 }
 
@@ -96,12 +96,12 @@
 
 %--------------HEADING---------------
 \begin{center}
-  \textbf{\Huge Rajit Banerjee} \\ \vspace{5pt}
-  \href{https://rajitbanerjee.com}{\small rajitbanerjee\textbf{.com}} $|$
-  \href{https://linkedin.com/in/rajitbanerjee/}{\small \textbf{linkedin}/rajitbanerjee} $|$
-  \href{https://github.com/rajitbanerjee}{\small \textbf{github}/rajitbanerjee} $|$
-  \href{mailto:rajit.banerjee@ucdconnect.ie}{\small rajit.banerjee\textbf{@}ucdconnect\textbf{.ie}} $|$
-  {\small \textbf{Dublin}, IE}
+	\textbf{\Huge Rajit Banerjee} \\ \vspace{5pt}
+	\href{https://rajitbanerjee.com}{\small rajitbanerjee\textbf{.com}} $|$
+	\href{https://linkedin.com/in/rajitbanerjee/}{\small \textbf{linkedin}: rajitbanerjee} $|$
+	\href{https://github.com/rajitbanerjee}{\small \textbf{github}: rajitbanerjee} $|$
+	\href{mailto:rajit.banerjee@ucdconnect.ie}{\small rajit.banerjee\textbf{@}ucdconnect\textbf{.ie}} $|$
+	{\small \textbf{Dublin}, Ireland}
 \end{center}
 
 % Alternate Heading:
@@ -111,14 +111,47 @@
 % \end{tabular*}
 
 
+%--------------EDUCATION--------------
+\section{Education}
+\cvSubHeadingListStart
+\cvSubheading
+{University College Dublin}{Sep. 2018 -- May 2022 (Expected)}
+{\textbf{BSc (Hons.) Computer Science with Data Science}}{Dublin, Ireland}
+
+\cvItemListStart
+\cvItem{\textbf{Current GPA:} 4.18/4.20 (First Class Honours)}
+\cvItem{\textbf{Relevant Coursework:}
+	Data Structures, Algorithms,
+	Distributed Systems,
+	Secure Software Engineering,
+	Machine Learning,
+	Optimisation,
+	Programming for Big Data,
+	Databases \& Information Systems,
+	Cloud Computing}
+
+\cvItem{\textbf{Honours and Awards:}
+	\href{https://www.ucd.ie/adastraacademy/academic/}{UCD Ad Astra Academic Scholarship},
+	\href{https://www.ucd.ie/global/scholarships/}{UCD Global Undergraduate Scholarship},
+	BSc Computer Science Scholarship
+	(\href{https://sisweb.ucd.ie/usis/W_HU_REPORTING.P_DISPLAY_QUERY?p_query=SC101-1A&p_parameters=A8A08F4E214445171B5771A1009E1D5B2E8D2BA93239FA8867648F2551D1F6E74111E7B3FBB422649785AC454612F967929BC94109BC9FA35BEAD1F53D23BA161359586343D3237CFDBE22184AE066F37B92C3B3C7382336AC2A2EAE5A092F63FC7A402CF2646B9597CDAAB378E40E1B}{Stage 2},
+	\href{https://sisweb.ucd.ie/usis/W_HU_REPORTING.P_DISPLAY_QUERY?p_query=SC101-1A&p_parameters=A8A08F4E214445171B5771A1009E1D5B2E8D2BA93239FA8867648F2551D1F6E74111E7B3FBB422649785AC454612F96787A57507118273967D6FD3CA5758624C79D7843C965FDFB69E23ABD0A5BF3B8352A54C50CBC563B72C4800831552834F550B235F0EFC644A6070F3328CE618D803B3E3CD94D6ADF3C463A5184F86FFAB}{Stage 3},
+	\href{https://hub.ucd.ie/usis/W_HU_REPORTING.P_DISPLAY_QUERY?p_query=SC101-1A&p_parameters=A8A08F4E214445171B5771A1009E1D5B2E8D2BA93239FA8867648F2551D1F6E74111E7B3FBB422649785AC454612F967AB057463726BFBD2F44F7545DFDE90BF68E76434A9F3F66B2D7280F061B44E47A154491B75B29B1C35AD7E6301B396F3181188D61C833A62D3514A39A8EAC1C1452649CCC93B578B2A8394D0736947AF}{Stage 4}),
+	Insight Research Scholarship,
+	UCD Embark Award}
+\cvItemListEnd
+
+\cvSubHeadingListEnd
+
+
 %---------------SKILLS------------------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-                \textbf{Languages \& Frameworks:}{ Java, Python, TypeScript, Node.js, React.js, Express.js, Spring Boot, GraphQL, Bash} \\
-                \textbf{Deployment, Cloud \& Version Control:}{ AWS, Docker, Git} \\
-                \textbf{Databases:}{ MySQL, DynamoDB, MongoDB} \\
-          }}
+	\small{\item{
+		            \textbf{Languages \& Frameworks:}{ Java, Python, TypeScript, Node.js, React.js, Express.js, Spring Boot, GraphQL, Bash} \\
+		            \textbf{Deployment, Cloud \& Version Control:}{ AWS, Docker, Git} \\
+		            \textbf{Databases \& Big Data:}{ MySQL, DynamoDB, MongoDB, Apache Spark} \\
+		      }}
 \end{itemize}
 
 
@@ -127,75 +160,67 @@
 \cvSubHeadingListStart
 
 \cvSubheading
-{\href{https://aws.amazon.com/}{Amazon Web Services}}{Dublin, IE}
-{\textbf{Software Development Engineer} $|$ \emph{AWS, TypeScript, Node.js, React.js}}{Jul. 2022 -- Present}
-\cvItemListStart
-\cvItem{Enterprise Identity and Authentication.}
-\cvItemListEnd
-
-\vspace{-20pt}
-\cvSubheading
-{}{}
-{\textbf{Software Development Engineer Intern} $|$ \emph{AWS, TypeScript, Node.js, React.js}}{Mar. 2021 -- Aug. 2021}
+{\href{https://aws.amazon.com/}{Amazon Web Services}}{Mar. 2021 -- Aug. 2021}
+{\textbf{Software Development Engineer Intern} $|$ \emph{AWS, TypeScript, Node.js/Express.js, React.js}}{Dublin, Ireland}
 \cvItemListStart
 \cvItem{Project (campaign automation and management): Designed and implemented a campaign automation tool for Amazon Enterprise Engineering (Identity and Authentication).}
-\cvItem{Integrated the campaign manager with Amazon's internal ticketing system to minimise human error and communication time during campaigns with over 5000 direct customers.}
-\cvItem{Developed a Node/Express back-end API with React front-end components, following microservice architecture.}
+\cvItem{Integrated the campaign manager with Amazon's ticketing system to minimise human error and communication time during campaigns with over 5000 direct customers.}
+\cvItem{Developed a Node+Express back-end API with React front-end components, following microservice architecture.}
 \cvItem{Built and deployed infrastructure securely with AWS services including Lambda (serverless), DynamoDB, S3, StepFunctions, CloudWatch, and so on.}
 \cvItemListEnd
 
 \cvSubheading
-{\href{https://www.insight-centre.org/}{Insight SFI Research Centre for Data Analytics}}{Dublin, IE}
-{\textbf{Research Intern} $|$ \emph{Python (Jupyter), OpenCV, Docker, Bash}}{Jun. 2020 -- Aug. 2020}
+{\href{https://www.insight-centre.org/}{Insight SFI Research Centre for Data Analytics}}{Jun. 2020 -- Aug. 2020}
+{\textbf{Research Intern} $|$ \emph{Python, OpenCV, Docker, Bash}}{Dublin, Ireland}
 \cvItemListStart
 \cvItem{Project (human body pose estimation): Performed experiments with multiple pose estimation models to
-  estimate the body keypoints of novice athletes (runners) using pre-recorded input videos.}
+	estimate the body keypoints of novice athletes (runners) using pre-recorded input videos.}
 \cvItem{Designed Bash scripts and Docker containers to automate video processing on a remote server.}
 \cvItem{Analysed time-series data and computed a variety of body pose angles from video frames to assist runners with maintaining optimal form and posture.}
+\cvItemListEnd
+
+
+\cvSubheading
+{\href{https://www.prmfincon.com/}{PRM Fincon Services Pvt. Ltd.}}{Jun. 2019 -- Aug. 2019}
+{\textbf{Python Development Intern} $|$ \emph{Python, OpenCV, Tesseract OCR, Camelot}}{Kolkata, India}
+\cvItemListStart
+\cvItem{Project (data extraction from financial reports): Refactored and optimised code to identity and extract tabular data (balance sheets, income statements) from PDFs by applying various image processing techniques.}
 \cvItemListEnd
 
 \cvSubHeadingListEnd
 
 
 %-----------------PROJECTS-----------------
-\section{\href{https://github.com/rajitbanerjee}{Projects}}
+\section{Projects}
+\cvSubHeadingListStart
+
+\cvProjectHeading
+{\href{https://github.com/rajitbanerjee/distributed-airways}{\textbf{Distributed Airways} $|$
+		\emph{Java, Spring Boot, GraphQL, TypeScript, React.js}}}{Dec. 2021 -- Jan. 2022}
+\cvItemListStart
+\cvItem{Flights metasearch engine simulation built using a Java backend, GraphQL for API design, React (TypeScript) frontend and Docker/Kubernetes for deployment.}
+\cvItemListEnd
+
+\cvProjectHeading
+{\href{https://github.com/rajitbanerjee/Scrabble}{\textbf{Scrabble} $|$
+		\emph{Java, JavaFX, JUnit, Scrum}}}{Jan. 2020 -- May 2020}
+\cvItemListStart
+\cvItem{Designed the game logic, GUI and bot, in a team of 3, using Java , JavaFX (GUI) and JUnit (testing).}
+\cvItem{Followed Agile (Scrum) methodology, acting as the Scrum Master for multiple sprints.}
+\cvItemListEnd
+
+
+\cvSubHeadingListEnd
+
+
+%------------EXTRACURRICULAR----------------
+\section{Extracurricular}
 
 \cvSimpleListStart
-\cvItem{{\href{https://github.com/rajitbanerjee/vax-warden}{\textbf{Vax Warden}}: Secure COVID-19 vaccine registration system built with Java (Spring Boot), React.js and Docker.}}
-\cvItem{{\href{https://github.com/rajitbanerjee/microservice-design-patterns}{\textbf{Microservice Design Patterns}}: Final Year Project at UCD (2022). Performance analysis of design patterns in microservice architecture, demonstrated using Java (Spring), Apache JMeter, Docker Compose and Python.}}
-\cvItem{{\href{https://github.com/rajitbanerjee/distributed-airways}{\textbf{Distributed Airways}}: Flights metasearch engine simulation using a Java (Spring Boot) backend, GraphQL for API design, React (TypeScript) frontend and Docker/Kubernetes for deployment.}}
+\cvItem{\textbf{Class Representative}: elected representative to the UCD Students’ Union (2019-2021) for Computer Science.}
+\cvItem{\textbf{Computer Science Demonstrator}: Lab tutor/demonstrator for UCD modules COMP20110 Discrete Mathematics, COMP20280 Data Structures and COMP20290 Algorithms.}
 \cvSimpleListEnd
 
-
-%--------------EDUCATION--------------
-\section{Education}
-\cvSubHeadingListStart
-\cvSubheading
-{\href{https://www.ucd.ie/cs/}{University College Dublin}}{Dublin, IE}
-{\textbf{BSc (Hons.) Computer Science with Data Science}}{Sep. 2018 -- Jun. 2022}
-
-\cvItemListStart
-\cvItem{\textbf{GPA:} 4.13/4.20 (First Class Honours)}
-\cvItem{\textbf{Relevant Coursework:}
-  Data Structures, Algorithms,
-  Distributed Systems,
-  Secure Software Engineering,
-  Cloud Computing,
-  Performance Engineering,
-  Programming for Big Data,
-  Machine Learning}
-
-\cvItem{\textbf{Honours and Awards:}
-  UCD Computing Award,
-  \href{https://www.ucd.ie/adastraacademy/academic/}{Ad Astra Academic Scholarship},
-  \href{https://www.ucd.ie/global/scholarships/}{Global Undergraduate Scholarship},
-  BSc Computer Science Scholarship
-  (\href{https://sisweb.ucd.ie/usis/W_HU_REPORTING.P_DISPLAY_QUERY?p_query=SC101-1A&p_parameters=A8A08F4E214445171B5771A1009E1D5B2E8D2BA93239FA8867648F2551D1F6E74111E7B3FBB422649785AC454612F967929BC94109BC9FA35BEAD1F53D23BA161359586343D3237CFDBE22184AE066F37B92C3B3C7382336AC2A2EAE5A092F63FC7A402CF2646B9597CDAAB378E40E1B}{Stage 2},
-  \href{https://sisweb.ucd.ie/usis/W_HU_REPORTING.P_DISPLAY_QUERY?p_query=SC101-1A&p_parameters=A8A08F4E214445171B5771A1009E1D5B2E8D2BA93239FA8867648F2551D1F6E74111E7B3FBB422649785AC454612F96787A57507118273967D6FD3CA5758624C79D7843C965FDFB69E23ABD0A5BF3B8352A54C50CBC563B72C4800831552834F550B235F0EFC644A6070F3328CE618D803B3E3CD94D6ADF3C463A5184F86FFAB}{Stage 3},
-  \href{https://hub.ucd.ie/usis/W_HU_REPORTING.P_DISPLAY_QUERY?p_query=SC101-1A&p_parameters=A8A08F4E214445171B5771A1009E1D5B2E8D2BA93239FA8867648F2551D1F6E74111E7B3FBB422649785AC454612F967AB057463726BFBD2F44F7545DFDE90BF68E76434A9F3F66B2D7280F061B44E47A154491B75B29B1C35AD7E6301B396F3181188D61C833A62D3514A39A8EAC1C1452649CCC93B578B2A8394D0736947AF}{Stage 4}),
-  Science Academic Award (2020, 2022)}
-\cvItemListEnd
-\cvSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
