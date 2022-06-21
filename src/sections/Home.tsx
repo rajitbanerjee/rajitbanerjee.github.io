@@ -36,10 +36,10 @@ const Name: React.FC = (): JSX.Element => {
 const Job: React.FC = (): JSX.Element => {
   return (
     <VStack align="left" spacing={1}>
-      <Text>4th Year Undergraduate Student</Text>
+      <Text>Software Development Engineer</Text>
       <TextLink
-        text="UCD School of Computer Science"
-        href="https://ucd.ie/cs"
+        text="Amazon Web Services (AWS)"
+        href="https://aws.amazon.com"
       />
     </VStack>
   );

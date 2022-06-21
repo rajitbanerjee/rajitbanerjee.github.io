@@ -62,12 +62,7 @@ const Section2: React.FC = (): JSX.Element => {
 };
 
 const Section3: React.FC = (): JSX.Element => {
-  return makeSection("databases & big data", [
-    "mysql",
-    "dynamodb",
-    "mongodb",
-    "spark",
-  ]);
+  return makeSection("databases", ["mysql", "dynamodb", "mongodb"]);
 };
 
 const Section4: React.FC = (): JSX.Element => {
