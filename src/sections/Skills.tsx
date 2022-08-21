@@ -9,8 +9,9 @@ export const Skills: React.FC = (): JSX.Element => {
       w="100%"
       h="100%"
       backgroundImage={`url(${backgroundImage})`}
-      backgroundSize="100%"
+      backgroundSize="contain"
       backgroundRepeat="no-repeat"
+      backgroundPosition="center"
       justifyContent="center"
     >
       <Card contents={<Contents />} />
