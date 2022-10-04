@@ -24,6 +24,6 @@ export const socialLinks = [
       home: <AiOutlineMail />,
       footer: <AiOutlineMail />,
     },
-    href: "mailto:rajit.banerjee@ucdconnect.ie",
+    href: "mailto:rajitbanerjee15@gmail.com",
   },
 ];
