@@ -2,7 +2,7 @@ import { VStack } from "@chakra-ui/react";
 
 // TODO Gallery in Photography section
 export const Photography: React.FC = (): JSX.Element => {
-  return <VStack></VStack>;
+    return <VStack></VStack>;
 };
 
 // TODO

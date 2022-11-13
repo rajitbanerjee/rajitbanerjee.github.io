@@ -1,68 +1,60 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "repository": "https://github.com/rajitbanerjee/rajitbanerjee.github.io",
-  "homepage": "https://rajitbanerjee.github.io",
-  "license": "MIT",
-  "private": false,
-  "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.4.0",
-    "@types/node": "^16.11.22",
-    "@types/react": "^17.0.40",
-    "@types/react-dom": "^17.0.13",
-    "husky": "^4.3.8",
-    "lint-staged": "^12.3.3",
-    "prettier": "^2.5.1",
-    "react-scripts": "^5.0.0"
-  },
-  "dependencies": {
-    "@chakra-ui/react": "^1.8.1",
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "framer-motion": "^5.6.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "source-map-explorer": "^2.5.2",
-    "typescript": "^4.5.5",
-    "typewriter-effect": "^2.18.2",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "name": "portfolio",
+    "version": "0.1.0",
+    "repository": "https://github.com/rajitbanerjee/rajitbanerjee.github.io",
+    "homepage": "https://rajitbanerjee.github.io",
+    "license": "MIT",
+    "private": false,
+    "devDependencies": {
+        "@testing-library/jest-dom": "^5.16.2",
+        "@testing-library/react": "^12.1.2",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/jest": "^27.4.0",
+        "@types/node": "^16.11.22",
+        "@types/react": "^17.0.40",
+        "@types/react-dom": "^17.0.13",
+        "husky": "^4.3.8",
+        "lint-staged": "^12.3.3",
+        "prettier": "^2.7.1",
+        "pretty-quick": "^3.1.3",
+        "react-scripts": "^5.0.0"
+    },
+    "dependencies": {
+        "@chakra-ui/react": "^1.8.1",
+        "@emotion/react": "^11.7.1",
+        "@emotion/styled": "^11.6.0",
+        "framer-motion": "^5.6.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-icons": "^4.3.1",
+        "source-map-explorer": "^2.5.2",
+        "typescript": "^4.5.5",
+        "typewriter-effect": "^2.18.2",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "analyze": "source-map-explorer 'build/static/js/*.js'",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "precommit": "pretty-quick --staged"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
     }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
-  }
 }

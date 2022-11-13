@@ -3,16 +3,16 @@ import { useEffect } from "react";
 import { Footer, Home, Photography, Skills } from "sections";
 
 export const App: React.FC = (): JSX.Element => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
-  return (
-    <VStack>
-      <Home />
-      <Skills />
-      <Photography />
-      <Footer />
-    </VStack>
-  );
+    return (
+        <VStack>
+            <Home />
+            <Skills />
+            <Photography />
+            <Footer />
+        </VStack>
+    );
 };

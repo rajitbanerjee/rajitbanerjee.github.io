@@ -4,22 +4,22 @@ My portfolio website, built with TypeScript/React.js (Create React App).
 
 ## Getting Started
 
-- For development:
-  ```bash
-  npm i
-  npm start
-  ```
-- For production:
+-   For development:
+    ```bash
+    npm i
+    npm start
+    ```
+-   For production:
 
-  ```bash
-  npm run build
-  npm run analyze
+    ```bash
+    npm run build
+    npm run analyze
 
-  npm install -g serve # optional
-  serve -s build
-  ```
+    npm install -g serve # optional
+    serve -s build
+    ```
 
-- Deployment: [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)
+-   Deployment: [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)
 
 ## License
 
