@@ -1,14 +1,14 @@
 export const backgroundImage = "/images/background.jpg";
 export const cv = "https://rajitbanerjee.com/cv/rajit_banerjee_cv.pdf";
 
-export const tools: {
-    [key: string]: {
-        src: string;
-        alt: string;
-        href: string;
-        imageHeight?: string;
-    };
-} = {
+export interface SkillProps {
+    src: string;
+    alt: string;
+    href: string;
+    imageHeight?: string;
+}
+
+export const skills: { [key: string]: SkillProps } = {
     java: {
         src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg",
         alt: "Java",

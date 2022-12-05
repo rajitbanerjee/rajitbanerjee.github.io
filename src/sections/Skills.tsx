@@ -1,7 +1,7 @@
 import { Button, Flex, Text, VStack } from "@chakra-ui/react";
 import { ButtonLink, Card } from "components";
 import { colors } from "config/colors";
-import { backgroundImage, cv, tools } from "config/skills";
+import { backgroundImage, cv, SkillProps, skills } from "config/skills";
 
 export const Skills: React.FC = (): JSX.Element => {
     return (
@@ -47,22 +47,14 @@ const Contents: React.FC = (): JSX.Element => {
 };
 
 const Section1: React.FC = (): JSX.Element => {
-    return makeSection("development", ["java", "python", "typescript", "nodejs", "reactjs", "spring", "graphql", "bash"]);
+    return makeSection(["typescript", "nodejs", "reactjs", "java", "spring", "graphql", "bash", "python"]);
 };
 
 const Section2: React.FC = (): JSX.Element => {
-    return makeSection("deployment, cloud & version control", ["aws", "docker", "git"]);
+    return makeSection(["aws", "docker", "git", "mysql", "mongodb"]);
 };
 
-const Section3: React.FC = (): JSX.Element => {
-    return makeSection("databases", ["mysql", "dynamodb", "mongodb"]);
-};
-
-const Section4: React.FC = (): JSX.Element => {
-    return makeSection("problem solving", ["aoc", "kattis", "hackerrank", "leetcode"]);
-};
-
-const makeSection = (title: string, toolsList: string[]) => {
+const makeSection = (toolsList: string[], title?: string) => {
     return (
         <VStack
             align="center"
@@ -89,8 +81,11 @@ const makeSection = (title: string, toolsList: string[]) => {
     );
 };
 
-const makeLinks = (toolsList: string[]) => {
-    return Object.entries(tools)
-        .filter(([k, _]) => toolsList.includes(k))
-        .map((e) => e[1]);
+const makeLinks = (toolsList: string[]): SkillProps[] => {
+    return toolsList.map((t) => {
+        if (!(t in skills)) {
+            throw Error(`Skill "${t}" is not defined`);
+        }
+        return skills[t];
+    });
 };
