@@ -6,8 +6,9 @@ import { backgroundImage, cv, tools } from "config/skills";
 export const Skills: React.FC = (): JSX.Element => {
     return (
         <VStack
-            w="100%"
-            h="100%"
+            // minWidth and minHeight cannot both be "full" (or similar). When one of them is absolute, the other can be relative.
+            minWidth="full"
+            minHeight="8xl"
             backgroundImage={`url(${backgroundImage})`}
             backgroundSize="contain"
             backgroundRepeat="no-repeat"
