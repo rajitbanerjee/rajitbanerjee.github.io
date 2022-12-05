@@ -1,6 +1,7 @@
 import { VStack } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { Footer, Home, Photography, Skills } from "sections";
+import { ErrorBoundary } from "./ErrorBoundary";
 
 export const App: React.FC = (): JSX.Element => {
     useEffect(() => {
@@ -9,10 +10,12 @@ export const App: React.FC = (): JSX.Element => {
 
     return (
         <VStack>
-            <Home />
-            <Skills />
-            <Photography />
-            <Footer />
+            <ErrorBoundary>
+                <Home />
+                <Skills />
+                <Photography />
+                <Footer />
+            </ErrorBoundary>
         </VStack>
     );
 };
