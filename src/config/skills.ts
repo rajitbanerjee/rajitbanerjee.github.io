@@ -10,17 +10,17 @@ export const tools: {
     };
 } = {
     java: {
-        src: "/images/tools/java.svg",
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg",
         alt: "Java",
         href: "https://www.oracle.com/ie/java/",
     },
     python: {
-        src: "/images/tools/python.svg",
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain-wordmark.svg",
         alt: "Python",
         href: "https://www.python.org/",
     },
     typescript: {
-        src: "/images/tools/ts.png",
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
         alt: "TypeScript",
         href: "https://www.typescriptlang.org",
     },
@@ -31,17 +31,17 @@ export const tools: {
         imageHeight: "25px",
     },
     reactjs: {
-        src: "/images/tools/react.png",
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
         alt: "ReactJS",
         href: "https://reactjs.org",
     },
     spring: {
-        src: "/images/tools/spring.png",
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg",
         alt: "Spring",
         href: "https://spring.io/projects/spring-boot",
     },
     graphql: {
-        src: "https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg",
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain-wordmark.svg",
         alt: "GraphQL",
         href: "https://graphql.org",
     },
@@ -57,25 +57,20 @@ export const tools: {
         imageHeight: "25px",
     },
     docker: {
-        src: "/images/tools/docker.png",
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-plain-wordmark.svg",
         alt: "Docker",
         href: "https://www.docker.com/",
     },
     git: {
-        src: "/images/tools/git.png",
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-plain.svg",
         alt: "Git",
         href: "https://git-scm.com/",
         imageHeight: "20px",
     },
     mysql: {
-        src: "/images/tools/mysql.png",
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
         alt: "MySQL",
         href: "https://www.mysql.com/",
-    },
-    dynamodb: {
-        src: "/images/tools/dynamo.png",
-        alt: "DynamoDB",
-        href: "https://aws.amazon.com/dynamodb/",
     },
     mongodb: {
         src: "/images/tools/mongo.png",
@@ -83,30 +78,24 @@ export const tools: {
         href: "https://www.mongodb.com/",
         imageHeight: "20px",
     },
-    spark: {
-        src: "/images/tools/spark.png",
-        alt: "Apache Spark",
-        href: "https://spark.apache.org/",
-        imageHeight: "30px",
-    },
-    aoc: {
-        src: "/images/tools/aoc.jpg",
-        alt: "Advent of Code",
-        href: "https://github.com/rajitbanerjee/advent-of-code",
-    },
-    kattis: {
-        src: "/images/tools/kattis.png",
-        alt: "Kattis",
-        href: "https://github.com/rajitbanerjee/kattis",
-    },
-    hackerrank: {
-        src: "/images/tools/hackerrank.png",
-        alt: "HackerRank",
-        href: "https://www.hackerrank.com/rajit_banerjee",
-    },
-    leetcode: {
-        src: "/images/tools/leetcode.png",
-        alt: "LeetCode",
-        href: "https://github.com/rajitbanerjee/leetcode",
-    },
+    // aoc: {
+    //     src: "/images/tools/aoc.jpg",
+    //     alt: "Advent of Code",
+    //     href: "https://github.com/rajitbanerjee/advent-of-code",
+    // },
+    // kattis: {
+    //     src: "/images/tools/kattis.png",
+    //     alt: "Kattis",
+    //     href: "https://github.com/rajitbanerjee/kattis",
+    // },
+    // hackerrank: {
+    //     src: "/images/tools/hackerrank.png",
+    //     alt: "HackerRank",
+    //     href: "https://www.hackerrank.com/rajit_banerjee",
+    // },
+    // leetcode: {
+    //     src: "/images/tools/leetcode.png",
+    //     alt: "LeetCode",
+    //     href: "https://github.com/rajitbanerjee/leetcode",
+    // },
 };
