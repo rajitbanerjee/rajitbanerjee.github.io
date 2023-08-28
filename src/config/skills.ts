@@ -1,5 +1,5 @@
 export const backgroundImage = "/images/background.jpg";
-export const cv = "https://rajitbanerjee.com/cv/rajit_banerjee_cv.pdf";
+export const cv = "https://rajitbanerjee.github.io/cv/rajit_banerjee_cv.pdf";
 
 export interface SkillProps {
     src: string;

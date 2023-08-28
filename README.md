@@ -1,4 +1,4 @@
-# [rajitbanerjee.com](https://rajitbanerjee.com)
+# [rajitbanerjee.github.io](https://rajitbanerjee.github.io)
 
 My portfolio website, built with TypeScript/React.js (Create React App).
 
